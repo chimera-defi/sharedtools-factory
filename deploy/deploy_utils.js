@@ -1,5 +1,6 @@
   const hre = require("hardhat");
   const fs = require("fs");
+  const got = require('got');
   const { ethers } = hre;
 
   const log = txt => {
@@ -25,18 +26,49 @@
   //   // todo 
   // }
 
+  const getGwei = (num) => ethers.utils.parseUnits(`${num}`, "gwei");
+
+  const getGasPrice = async(confidenceMin) => {
+    let url = 'https://api.blocknative.com/gasprices/blockprices';
+    let opts = {
+      'Authorization': process.env.BLOCKNATIVE,
+      json: true
+    }
+    let res = await got(url, opts);
+    let estimatedPrices = res.body.blockPrices[0].estimatedPrices.filter(obj => obj.confidence >= confidenceMin);
+    let lowest = estimatedPrices[estimatedPrices.length-1]
+
+    return {
+      maxPriorityFeePerGas: getGwei(lowest.maxPriorityFeePerGas),
+      maxFeePerGas: getGwei(lowest.maxFeePerGas)
+    }
+  }
+
+  const getMediumGas = async () => {
+    return await getGasPrice(80);
+  }
+
   const _getOverrides = async (launchNetwork = false) => {
     if (launchNetwork && ethLaunchNetworks.indexOf(launchNetwork) == -1) return {};
     // https://www.blocknative.com/gas-estimator
     const overridesForEIP1559 = {
       type: 2,
-      maxFeePerGas: ethers.utils.parseUnits("10", "gwei"),
-      maxPriorityFeePerGas: ethers.utils.parseUnits("3", "gwei"),
+      maxFeePerGas: getGwei(10),
+      maxPriorityFeePerGas: getGwei(3),
       gasLimit: 10000000,
     };
-    const gasPrice = await hre.ethers.provider.getGasPrice();
-    overridesForEIP1559.maxFeePerGas = gasPrice;
-    if (gasPrice.lt(overridesForEIP1559.maxPriorityFeePerGas)) overridesForEIP1559.maxPriorityFeePerGas = gasPrice.sub(1);
+    if (launchNetwork == 'mainnet') {
+      let {
+        maxFeePerGas, 
+        maxPriorityFeePerGas
+      } = await getMediumGas();
+      overridesForEIP1559.maxFeePerGas = maxFeePerGas;
+      overridesForEIP1559.maxPriorityFeePerGas = maxPriorityFeePerGas;
+    } else {
+      const gasPrice = await hre.ethers.provider.getGasPrice();
+      overridesForEIP1559.maxFeePerGas = gasPrice;
+    }
+    if (overridesForEIP1559.maxFeePerGas.lt(overridesForEIP1559.maxPriorityFeePerGas)) overridesForEIP1559.maxPriorityFeePerGas = overridesForEIP1559.maxFeePerGas.sub(1);
     return overridesForEIP1559;
   };
 
@@ -206,7 +238,11 @@
       this.signer = null;
     }
     async init() {
+      let account = hre.config.networks[this.launchNetwork].accounts;
       let privkey = hre.config.networks[this.launchNetwork].accounts[0];
+      if (typeof account == 'object' && account.mnemonic) {
+        privkey = ethers.Wallet.fromMnemonic(account.mnemonic).privateKey
+      }
       this.signer = new hre.ethers.Wallet(privkey, hre.ethers.provider);
       this.address = this.signer.address;
 
@@ -220,7 +256,7 @@
       );
     }
     async deployContract(name, ctrctName, args) {
-      if (typeof args !== 'object' || !args.length) args = [args];
+      if (typeof args !== 'undefined' && (typeof args !== 'object' || !args.length)) args = [args];
       this.contracts[name] = await _deployContract(ctrctName, this.launchNetwork, args);
     }
     async deployInitializableContract(name, ctrctName, args) {
@@ -317,6 +353,23 @@
     }
   }
 
+
+async function deployUsingClass(name, args) {
+  let dh = new DeployHelper();
+  await dh.init();
+  await dh.deployContract(name, name, args);
+  await dh.postRun();
+}
+
+function deploySingleContract(name, args) {
+  deployUsingClass(name, args)
+  .then(() => process.exit(0))
+  .catch(error => {
+    console.error(error);
+    process.exit(1);
+  });
+}
+
   module.exports = {
     _deployInitializableContract: _deployInitializableContract,
     _deployContract: _deployContract,
@@ -333,4 +386,5 @@
     _getContract: _getContract,
     advanceTimeAndBlock: advanceTimeAndBlock,
     DeployHelper: DeployHelper,
+    deploySingleContract: deploySingleContract
   };

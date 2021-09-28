@@ -10,6 +10,7 @@
     "chai": "^4.3.4",
     "ethereum-waffle": "^3.4.0",
     "ethers": "^5.4.6",
+    "got": "^11.8.2",
     "hardhat": "^2.6.1",
     "hardhat-abi-exporter": "^2.2.1",
     "hardhat-contract-sizer": "^2.0.3",
@@ -26,6 +27,7 @@
     "@openzeppelin/contracts-upgradeable": "^4.3.1"
   },
   "scripts": {
+    "flattenAll": "mkdir flats && mkdir flats/contracts && npx hardhat flattenAll",
     "setup_dirs": "mkdir flats || mkdir flattened",
     "uml": "npx sol2uml ./flats",
     "flat": "npx hardhat flat contracts/${CNAME} --output flats/${CNAME}",
