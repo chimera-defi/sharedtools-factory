@@ -1,4 +1,24 @@
 # Template base
+
+Factory contracts for SharedTools. 
+Features:
+- Voting Escrow Contract 
+- Factory for above
+- Funddistributor contract
+- MAsterchef contract
+- Farming factory which launches the 2 above
+- Clone factory, allowing clone proxies to be deployed saving gas on gas intensive networks like mainnet 
+
+# Deploy
+
+Add `--network <wanted network>` 
+```
+ npx hardhat run --network goerli deploy/deployFarmingFactory.js 
+
+ npx hardhat run --network goerli deploy/deployVoteEscrowFactory.js 
+ ```
+
+# OLD
 # Quickstart and developer notes
 
 - Based on and following env best practices from https://github.com/paulrberg/solidity-template
