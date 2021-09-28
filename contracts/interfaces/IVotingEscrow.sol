@@ -2,7 +2,7 @@
 
 // Standard Curvefi voting escrow interface
 // We want to use a standard iface to allow compatibility
-pragma solidity ^0.8.0;
+pragma solidity 0.7.6;
 
 interface IVotingEscrow {
     // Following are used in Fee distribution contracts e.g.

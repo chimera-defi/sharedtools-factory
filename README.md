@@ -1,3 +1,10 @@
+# Metis notes
+
+Farming contracts rely on solidity 0.8.0+ for overflow checking and are not safe for production use.  
+
+VoteEscrowFactory was succesfully deployed. 
+Had to tweak it a good amount to deal with no native ETH token errors from OVM, and going over the contract limit.  
+Also had to remove any contracts that wouldnt compile. Wonder if there's a OVM variant of OZ.  
 # Template base
 
 Factory contracts for SharedTools. 

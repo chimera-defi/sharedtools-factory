@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: MIT
-pragma solidity >=0.8.4;
+pragma solidity 0.7.6;
 
 import "hardhat/console.sol";
 
-error GreeterError();
 
 contract Greeter {
     string public greeting;
+    event GreeterError();
 
     constructor(string memory _greeting) {
         console.log("Deploying a Greeter with greeting:", _greeting);
@@ -22,7 +22,8 @@ contract Greeter {
         greeting = _greeting;
     }
 
-    function throwError() external pure {
-        revert GreeterError();
-    }
+    // function throwError() external pure {
+    //     emit GreeterError();
+    //     revert;
+    // }
 }

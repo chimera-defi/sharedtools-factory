@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "devDependencies": {
     "@chimera-defi/hardhat-framework": "git+https://github.com/chimera-defi/hardhat-framework.git",
+    "@metis.io/hardhat-mvm": "^0.2.6",
     "@nomiclabs/hardhat-ethers": "^2.0.2",
     "@nomiclabs/hardhat-etherscan": "^2.1.5",
     "@nomiclabs/hardhat-waffle": "^2.0.1",
@@ -23,7 +24,8 @@
     "solhint-plugin-prettier": "^0.0.5"
   },
   "dependencies": {
-    "@openzeppelin/contracts": "^4.3.1",
+    "@eth-optimism/hardhat-ovm": "^0.2.3",
+    "@openzeppelin/contracts": "^3.0.0",
     "@openzeppelin/contracts-upgradeable": "^4.3.1"
   },
   "scripts": {

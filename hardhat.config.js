@@ -1,5 +1,6 @@
 
-  require("dotenv")
+require("dotenv")
+require("@metis.io/hardhat-mvm")
 
 module.exports = require("@chimera-defi/hardhat-framework").config.hardhat(require("./settings").hardhat)
 
