@@ -3,13 +3,12 @@
 pragma solidity 0.8.7;
 
 import "@openzeppelin/contracts/access/Ownable.sol";
-import "@openzeppelin/contracts/proxy/utils/Initializable.sol";
 import "@openzeppelin/contracts/utils/math/SafeMath.sol";
 import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
 import "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol";
 
-contract FundDistributor is Ownable, Initializable {
+contract FundDistributor is Ownable {
     using SafeMath for uint256;
     using SafeERC20 for IERC20;
 
@@ -32,7 +31,7 @@ contract FundDistributor is Ownable, Initializable {
         _;
     }
 
-    function initialize(address _reward) external initializer {
+    constructor(address _reward) {
         reward = IERC20(_reward);
         missingDecimals = 18 - ERC20(_reward).decimals();
     }
