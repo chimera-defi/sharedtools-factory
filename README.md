@@ -1,24 +1,34 @@
 # Template base
 
-Factory contracts for SharedTools. 
+Factory contracts for SharedTools.org
+Read more: https://medium.com/@chimera_defi/sharedtools-c2fe8e49ba9b
+
 Features:
-- Voting Escrow Contract 
+
+- Voting Escrow Contract
 - Factory for above
 - Funddistributor contract
 - MAsterchef contract
 - Farming factory which launches the 2 above
-- Clone factory, allowing clone proxies to be deployed saving gas on gas intensive networks like mainnet 
+- Clone factory, allowing clone proxies to be deployed saving gas on gas intensive networks like mainnet
+
+# Utils
+
+`scripts/toFactory.js` will quickly scaffold out a factory for constructor based contracts.
+Change the `path` in it to the right contract and invoke as `node toFactory.js` and use the console output.
 
 # Deploy
 
-Add `--network <wanted network>` 
-```
- npx hardhat run --network goerli deploy/deployFarmingFactory.js 
+Add `--network <wanted network>`
 
- npx hardhat run --network goerli deploy/deployVoteEscrowFactory.js 
- ```
+```
+ npx hardhat run --network goerli deploy/deployFarmingFactory.js
+
+ npx hardhat run --network goerli deploy/deployVoteEscrowFactory.js
+```
 
 # OLD
+
 # Quickstart and developer notes
 
 - Based on and following env best practices from https://github.com/paulrberg/solidity-template
@@ -32,21 +42,24 @@ npx hardhat compile
 ```
 
 - To deploy
+
 ```
-npx hardhat run --network goerli deploy/deploy_common_1.js 
+npx hardhat run --network goerli deploy/deploy_common_1.js
 ```
 
 # Motivation
+
 - Abstract away as much of deployment script functionality as possible to allow the dev to focus on the contracts
 - Inherit as much stuff as possible to easily add new networks
-- Powerful descriptive deploys 
+- Powerful descriptive deploys
 - that track total expenditure for reimbursements
 - Verify contracts on etherscan
 - Output steps done
 - Allow declarative syntax for full system state setup including things like token distributions and multisig ownership transfers
-- Steps output can be easily turned into a readme for users pointing to contracts with links and description of everything done  
+- Steps output can be easily turned into a readme for users pointing to contracts with links and description of everything done
 
-Most of this is based on my experience setting up new contracts for SharedStake.  Do with it what you will.  
+Most of this is based on my experience setting up new contracts for SharedStake. Do with it what you will.
+
 # Errors
 
 A note on errors
