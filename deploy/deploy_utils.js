@@ -220,6 +220,22 @@ async function loadContract(name, address, signer) {
   return new ethers.Contract(address, abi, signer);
 }
 
+async function generateJSONListForUI(contracts) {
+  let res = {};
+  let cid = await hre.getChainId();
+  Object.keys(contracts).forEach(name => {
+    res[name] = {
+      TITLE: name,
+      LOGO: "🏆🚀",
+      ABI: name,
+      VAULT_TYPE: "experimental",
+      ADDR: _getAddress(contracts[name]),
+      CHAIN_ID: cid,
+    };
+  });
+  return res;
+}
+
 class DeployHelper {
   constructor(multisig_address) {
     this.contracts = {};
@@ -251,6 +267,7 @@ class DeployHelper {
   }
   async deployContract(name, ctrctName, args) {
     if (typeof args !== "undefined" && (typeof args !== "object" || !args.length)) args = [args];
+    log(`Attempting to deploy ${name} - ${ctrctName} - ${args?.length ? args.join(',') : args}`)
     this.contracts[name] = await _deployContract(ctrctName, this.launchNetwork, args);
   }
   async deployInitializableContract(name, ctrctName, args) {
@@ -344,6 +361,7 @@ class DeployHelper {
       )}. Took ${finalBlockTime - this.currentBlockTime} seconds`,
     );
     await this.verify();
+    log(JSON.stringify(await generateJSONListForUI(this.contracts)));
   }
 }
 
