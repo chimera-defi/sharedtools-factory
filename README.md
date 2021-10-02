@@ -1,3 +1,6 @@
+# SharedTools
+https://medium.com/@chimera_defi/sharedtools-c2fe8e49ba9b
+
 # Metis notes
 
 Farming contracts rely on solidity 0.8.0+ for overflow checking and are not safe for production use.  

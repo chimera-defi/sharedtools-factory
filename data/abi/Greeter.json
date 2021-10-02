@@ -11,9 +11,10 @@
     "type": "constructor"
   },
   {
+    "anonymous": false,
     "inputs": [],
     "name": "GreeterError",
-    "type": "error"
+    "type": "event"
   },
   {
     "inputs": [],
@@ -52,13 +53,6 @@
     "name": "setGreeting",
     "outputs": [],
     "stateMutability": "nonpayable",
-    "type": "function"
-  },
-  {
-    "inputs": [],
-    "name": "throwError",
-    "outputs": [],
-    "stateMutability": "pure",
     "type": "function"
   }
 ]
