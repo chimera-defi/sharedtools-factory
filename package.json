@@ -29,12 +29,12 @@
     "@openzeppelin/contracts3": "npm:@openzeppelin/contracts@^3.4.2"
   },
   "scripts": {
-    "flattenAll": "mkdir flats && mkdir flats/contracts && npx hardhat flattenAll",
+    "flattenAll": "mkdir flats ; mkdir flats/contracts ; npx hardhat flattenAll",
     "setup_dirs": "mkdir flats || mkdir flattened",
     "uml": "npx sol2uml ./flats",
     "flat": "npx hardhat flat contracts/${CNAME} --output flats/${CNAME}",
     "flatten": "npx hardhat flatten --remove-licenses ./contracts/sharedDeposit_v2.sol > flattened/sharedDeposit_v2_flat.sol",
-    "build": "npm run-script prettier ; npm run-script prettier:check ; npm run-script lint:sol ; npx hardhat compile",
+    "build": "npm run-script prettier ; npm run-script prettier:check ; npm run-script lint:sol ; npx hardhat compile ;",
     "clean": "hardhat clean",
     "clean_logs": "rm deploy_log.json && rm log.txt && rm verify_attempt_log.json",
     "clean_all": "npm run-script clean || npm run-script clean_logs || rm -rf data || rm -rf cache || rm -rf flattened",

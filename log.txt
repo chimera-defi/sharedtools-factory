@@ -1,0 +1,750 @@
+Initial balance of deployer at 0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266 is: 990000000000000000000 at block timestamp : 1612972916
+Initial balance of deployer at 0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266 is: 990000000000000000000 at block timestamp : 1612972916
+Initial balance of deployer at 0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266 is: 990000000000000000000 at block timestamp : 1612972916
+Initial balance of deployer at 0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266 is: 990000000000000000000 at block timestamp : 1612972916
+Initial balance of deployer at 0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266 is: 990000000000000000000 at block timestamp : 1612972916
+Initial balance of deployer at 0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266 is: 990000000000000000000 at block timestamp : 1612972916
+
+Deployed VoteEscrowFactory to 0x3Aa5ebB10DC797CAC828524e59A333d0A371443c on hardhat w/ args: 
+
+
+Deployment finished. Contracts deployed: 
+
+
+VoteEscrowFactory deployed to 0x3Aa5ebB10DC797CAC828524e59A333d0A371443c at https://hardhat.etherscan.io/address/0x3Aa5ebB10DC797CAC828524e59A333d0A371443c 
+Total cost of deploys: 6347036000000000 with gas settings: {}. Took 1 seconds
+starting _verifyAll
+Initial balance of deployer at 0x4f2bD410B81Ea24F83D1E807511BAec204c4Cf7a is: 6898200102049302838 at block timestamp : 1632837900
+
+Deployed VoteEscrowFactory to 0x74B136F6AF697209fD56Db7df9E023Bae71d711E on goerli w/ args: 
+
+
+Deployment finished. Contracts deployed: 
+
+
+VoteEscrowFactory deployed to 0x74B136F6AF697209fD56Db7df9E023Bae71d711E at https://goerli.etherscan.io/address/0x74B136F6AF697209fD56Db7df9E023Bae71d711E 
+Total cost of deploys: 7240960506249626 with gas settings: {"type":2,"maxFeePerGas":{"type":"BigNumber","hex":"0x87ffb64b"},"maxPriorityFeePerGas":{"type":"BigNumber","hex":"0x87ffb64a"},"gasLimit":10000000}. Took 30 seconds
+starting _verifyAll
+Waiting 10s to make sure everything has propagated on etherscan
+Verifying {"address":"0x74B136F6AF697209fD56Db7df9E023Bae71d711E","args":[],"initialized":false,"name":"VoteEscrowFactory"} at 0x74B136F6AF697209fD56Db7df9E023Bae71d711E 
+Verified {"address":"0x74B136F6AF697209fD56Db7df9E023Bae71d711E","args":[],"initialized":false,"name":"VoteEscrowFactory"} on network: goerli with constructor args 
+
+
+Waiting 2 s for Etherscan API limit of 5 calls/s
+Verifications finished: 1 / 1 
+Initial balance of deployer at 0x4f2bD410B81Ea24F83D1E807511BAec204c4Cf7a is: 6890959141543053212 at block timestamp : 1632838095
+
+Deployed FarmingFactory to 0xEDD9503c6d94b0296Da8b37abF72F5F7F91FBAaf on goerli w/ args: 
+
+
+Deployment finished. Contracts deployed: 
+
+
+FarmingFactory deployed to 0xEDD9503c6d94b0296Da8b37abF72F5F7F91FBAaf at https://goerli.etherscan.io/address/0xEDD9503c6d94b0296Da8b37abF72F5F7F91FBAaf 
+Total cost of deploys: 6317399314526222 with gas settings: {"type":2,"maxFeePerGas":{"type":"BigNumber","hex":"0x87ffb64b"},"maxPriorityFeePerGas":{"type":"BigNumber","hex":"0x87ffb64a"},"gasLimit":10000000}. Took 15 seconds
+starting _verifyAll
+Waiting 10s to make sure everything has propagated on etherscan
+Verifying {"address":"0xEDD9503c6d94b0296Da8b37abF72F5F7F91FBAaf","args":[],"initialized":false,"name":"FarmingFactory"} at 0xEDD9503c6d94b0296Da8b37abF72F5F7F91FBAaf 
+Verified {"address":"0xEDD9503c6d94b0296Da8b37abF72F5F7F91FBAaf","args":[],"initialized":false,"name":"FarmingFactory"} on network: goerli with constructor args 
+
+
+Waiting 2 s for Etherscan API limit of 5 calls/s
+Verifications finished: 1 / 1 
+Initial balance of deployer at 0xa1feaF41d843d53d0F6bEd86a8cF592cE21C409e is: 100000000000000000 at block timestamp : 1632857113
+Initial balance of deployer at 0xa1feaF41d843d53d0F6bEd86a8cF592cE21C409e is: 100000000000000000 at block timestamp : 1632857113
+Initial balance of deployer at 0xa1feaF41d843d53d0F6bEd86a8cF592cE21C409e is: 100000000000000000 at block timestamp : 1632857113
+Initial balance of deployer at 0xa1feaF41d843d53d0F6bEd86a8cF592cE21C409e is: 100000000000000000 at block timestamp : 1632857113
+Initial balance of deployer at 0xa1feaF41d843d53d0F6bEd86a8cF592cE21C409e is: 99785487960000000 at block timestamp : 1632863734
+
+Deployed VoteEscrowFactory to 0xAA2EB2c5aE9339D66E3F366a504DF72BB86f06Da on metis w/ args: 
+
+
+Deployment finished. Contracts deployed: 
+
+
+VoteEscrowFactory deployed to 0xAA2EB2c5aE9339D66E3F366a504DF72BB86f06Da at https://metis.etherscan.io/address/0xAA2EB2c5aE9339D66E3F366a504DF72BB86f06Da 
+Total cost of deploys: 1948809390000000 with gas settings: {}. Took 1321 seconds
+starting _verifyAll
+Initial balance of deployer at 0xa1feaF41d843d53d0F6bEd86a8cF592cE21C409e is: 97836678570000000 at block timestamp : 1632865055
+
+Deployed VoteEscrowFactory to 0x898BAD2774EB97cF6b94605677F43b41871410B1 on metis w/ args: 
+
+
+Deployment finished. Contracts deployed: 
+
+
+VoteEscrowFactory deployed to 0x898BAD2774EB97cF6b94605677F43b41871410B1 at https://metis.etherscan.io/address/0x898BAD2774EB97cF6b94605677F43b41871410B1 
+Total cost of deploys: 1967559465000000 with gas settings: {}. Took 331 seconds
+starting _verifyAll
+Initial balance of deployer at 0xa1feaF41d843d53d0F6bEd86a8cF592cE21C409e is: 65189090156463903356 at block timestamp : 1633187249
+
+Deployed MintableNFTSaleFactory to 0xb68f752657d3B398ab6961A1e31f8aB9329d2e39 on goerli w/ args: 
+
+
+Deployment finished. Contracts deployed: 
+
+
+MintableNFTSaleFactory deployed to 0xb68f752657d3B398ab6961A1e31f8aB9329d2e39 at https://goerli.etherscan.io/address/0xb68f752657d3B398ab6961A1e31f8aB9329d2e39 
+Total cost of deploys: 9006120290679980 with gas settings: {"type":2,"maxFeePerGas":{"type":"BigNumber","hex":"0x87ffb64b"},"maxPriorityFeePerGas":{"type":"BigNumber","hex":"0x87ffb64a"},"gasLimit":10000000}. Took 30 seconds
+starting _verifyAll
+Waiting 10s to make sure everything has propagated on etherscan
+Verifying {"address":"0xb68f752657d3B398ab6961A1e31f8aB9329d2e39","args":[],"initialized":false,"name":"MintableNFTSaleFactory"} at 0xb68f752657d3B398ab6961A1e31f8aB9329d2e39 
+Verified {"address":"0xb68f752657d3B398ab6961A1e31f8aB9329d2e39","args":[],"initialized":false,"name":"MintableNFTSaleFactory"} on network: goerli with constructor args 
+
+
+Waiting 2 s for Etherscan API limit of 5 calls/s
+Verifications finished: 1 / 1 
+Initial balance of deployer at 0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266 is: 990000000000000000000 at block timestamp : 1612972916
+Initial balance of deployer at 0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266 is: 990000000000000000000 at block timestamp : 1612972916
+
+Deployed CloneFactory to 0x3Aa5ebB10DC797CAC828524e59A333d0A371443c on hardhat w/ args: 
+
+
+Deployment finished. Contracts deployed: 
+
+
+CloneFactory deployed to 0x3Aa5ebB10DC797CAC828524e59A333d0A371443c at https://hardhat.etherscan.io/address/0x3Aa5ebB10DC797CAC828524e59A333d0A371443c 
+Total cost of deploys: 464344000000000 with gas settings: {}. Took 1 seconds
+starting _verifyAll
+Initial balance of deployer at 0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266 is: 989999535656000000000 at block timestamp : 1612972917
+
+Deployed ERC721MerkleDistributorFactory to 0xc6e7DF5E7b4f2A278906862b61205850344D4e7d on hardhat w/ args: 
+
+
+Deployment finished. Contracts deployed: 
+
+
+ERC721MerkleDistributorFactory deployed to 0xc6e7DF5E7b4f2A278906862b61205850344D4e7d at https://hardhat.etherscan.io/address/0xc6e7DF5E7b4f2A278906862b61205850344D4e7d 
+Total cost of deploys: 4778519988119700 with gas settings: {}. Took 1 seconds
+starting _verifyAll
+Initial balance of deployer at 0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266 is: 989994757136011880300 at block timestamp : 1612972918
+
+Deployed FarmingFactory to 0x59b670e9fA9D0A427751Af201D676719a970857b on hardhat w/ args: 
+
+
+Deployment finished. Contracts deployed: 
+
+
+FarmingFactory deployed to 0x59b670e9fA9D0A427751Af201D676719a970857b at https://hardhat.etherscan.io/address/0x59b670e9fA9D0A427751Af201D676719a970857b 
+Total cost of deploys: 5057529293925848 with gas settings: {}. Took 1 seconds
+starting _verifyAll
+Initial balance of deployer at 0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266 is: 989989699606717954452 at block timestamp : 1612972919
+
+Deployed MintableNFTSaleFactory to 0x4ed7c70F96B99c776995fB64377f0d4aB3B0e1C1 on hardhat w/ args: 
+
+
+Deployment finished. Contracts deployed: 
+
+
+MintableNFTSaleFactory deployed to 0x4ed7c70F96B99c776995fB64377f0d4aB3B0e1C1 at https://hardhat.etherscan.io/address/0x4ed7c70F96B99c776995fB64377f0d4aB3B0e1C1 
+Total cost of deploys: 7028033341549580 with gas settings: {}. Took 1 seconds
+starting _verifyAll
+Initial balance of deployer at 0x4f2bD410B81Ea24F83D1E807511BAec204c4Cf7a is: 18850000000000000000 at block timestamp : 1633195170
+
+Deployed CloneFactory to 0xA393088d6172845e4F4003E3FD958a9F174420B0 on rinkeby w/ args: 
+
+
+Deployment finished. Contracts deployed: 
+
+
+CloneFactory deployed to 0xA393088d6172845e4F4003E3FD958a9F174420B0 at https://rinkeby.etherscan.io/address/0xA393088d6172845e4F4003E3FD958a9F174420B0 
+Total cost of deploys: 232172001857376 with gas settings: {"type":2,"maxFeePerGas":{"type":"BigNumber","hex":"0x3b9aca08"},"maxPriorityFeePerGas":{"type":"BigNumber","hex":"0x3b9aca07"},"gasLimit":10000000}. Took 30 seconds
+starting _verifyAll
+Waiting 10s to make sure everything has propagated on etherscan
+Verifying {"address":"0xA393088d6172845e4F4003E3FD958a9F174420B0","args":[],"initialized":false,"name":"CloneFactory"} at 0xA393088d6172845e4F4003E3FD958a9F174420B0 
+Verified {"address":"0xA393088d6172845e4F4003E3FD958a9F174420B0","args":[],"initialized":false,"name":"CloneFactory"} on network: rinkeby with constructor args 
+
+
+Waiting 2 s for Etherscan API limit of 5 calls/s
+Verifications finished: 1 / 1 
+Initial balance of deployer at 0x4f2bD410B81Ea24F83D1E807511BAec204c4Cf7a is: 18849767827998142624 at block timestamp : 1633195260
+
+Deployed ERC721MerkleDistributorFactory to 0xc1C531d7b9A2F99b9C957cDd5D385A7d780d5f6f on rinkeby w/ args: 
+
+
+Deployment finished. Contracts deployed: 
+
+
+ERC721MerkleDistributorFactory deployed to 0xc1C531d7b9A2F99b9C957cDd5D385A7d780d5f6f at https://rinkeby.etherscan.io/address/0xc1C531d7b9A2F99b9C957cDd5D385A7d780d5f6f 
+Total cost of deploys: 2540679022866111 with gas settings: {"type":2,"maxFeePerGas":{"type":"BigNumber","hex":"0x3b9aca09"},"maxPriorityFeePerGas":{"type":"BigNumber","hex":"0x3b9aca08"},"gasLimit":10000000}. Took 15 seconds
+starting _verifyAll
+Waiting 10s to make sure everything has propagated on etherscan
+Verifying {"address":"0xc1C531d7b9A2F99b9C957cDd5D385A7d780d5f6f","args":[],"initialized":false,"name":"ERC721MerkleDistributorFactory"} at 0xc1C531d7b9A2F99b9C957cDd5D385A7d780d5f6f 
+Verified {"address":"0xc1C531d7b9A2F99b9C957cDd5D385A7d780d5f6f","args":[],"initialized":false,"name":"ERC721MerkleDistributorFactory"} on network: rinkeby with constructor args 
+
+
+Waiting 2 s for Etherscan API limit of 5 calls/s
+Verifications finished: 1 / 1 
+Initial balance of deployer at 0x4f2bD410B81Ea24F83D1E807511BAec204c4Cf7a is: 18847227148975276513 at block timestamp : 1633195350
+
+Deployed FarmingFactory to 0xC390303D04dC060e4458B72c8F7acD014D57E9ea on rinkeby w/ args: 
+
+
+Deployment finished. Contracts deployed: 
+
+
+FarmingFactory deployed to 0xC390303D04dC060e4458B72c8F7acD014D57E9ea at https://rinkeby.etherscan.io/address/0xC390303D04dC060e4458B72c8F7acD014D57E9ea 
+Total cost of deploys: 2768746024918714 with gas settings: {"type":2,"maxFeePerGas":{"type":"BigNumber","hex":"0x3b9aca09"},"maxPriorityFeePerGas":{"type":"BigNumber","hex":"0x3b9aca08"},"gasLimit":10000000}. Took 15 seconds
+starting _verifyAll
+Waiting 10s to make sure everything has propagated on etherscan
+Verifying {"address":"0xC390303D04dC060e4458B72c8F7acD014D57E9ea","args":[],"initialized":false,"name":"FarmingFactory"} at 0xC390303D04dC060e4458B72c8F7acD014D57E9ea 
+Etherscan verification failed w/ HardhatError: HH411: The library @openzeppelin/contracts2, imported from contracts/factories/ERC20MerkleDistributorFactory.sol, is not installed. Try installing it using npm. | Args:  | on rinkeby for 0xC390303D04dC060e4458B72c8F7acD014D57E9ea
+Waiting 2 s for Etherscan API limit of 5 calls/s
+Verifications finished: 0 / 1 
+Initial balance of deployer at 0x4f2bD410B81Ea24F83D1E807511BAec204c4Cf7a is: 18844458402950357799 at block timestamp : 1633195395
+
+Deployed MintableNFTSaleFactory to 0xf13b66Fb0bc1BC35AB89b7647A4ea0E608aA799c on rinkeby w/ args: 
+
+
+Deployment finished. Contracts deployed: 
+
+
+MintableNFTSaleFactory deployed to 0xf13b66Fb0bc1BC35AB89b7647A4ea0E608aA799c at https://rinkeby.etherscan.io/address/0xf13b66Fb0bc1BC35AB89b7647A4ea0E608aA799c 
+Total cost of deploys: 3947140035524260 with gas settings: {"type":2,"maxFeePerGas":{"type":"BigNumber","hex":"0x3b9aca09"},"maxPriorityFeePerGas":{"type":"BigNumber","hex":"0x3b9aca08"},"gasLimit":10000000}. Took 30 seconds
+starting _verifyAll
+Waiting 10s to make sure everything has propagated on etherscan
+Verifying {"address":"0xf13b66Fb0bc1BC35AB89b7647A4ea0E608aA799c","args":[],"initialized":false,"name":"MintableNFTSaleFactory"} at 0xf13b66Fb0bc1BC35AB89b7647A4ea0E608aA799c 
+Etherscan verification failed w/ HardhatError: HH411: The library @openzeppelin/contracts2, imported from contracts/factories/ERC20MerkleDistributorWithClawback.sol, is not installed. Try installing it using npm. | Args:  | on rinkeby for 0xf13b66Fb0bc1BC35AB89b7647A4ea0E608aA799c
+Waiting 2 s for Etherscan API limit of 5 calls/s
+Verifications finished: 0 / 1 
+Initial balance of deployer at 0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266 is: 990000000000000000000 at block timestamp : 1612972916
+
+Deployed CloneFactory to 0x3Aa5ebB10DC797CAC828524e59A333d0A371443c on hardhat w/ args: 
+Initial balance of deployer at 0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266 is: 990000000000000000000 at block timestamp : 1612972916
+
+Deployed CloneFactory to 0x3Aa5ebB10DC797CAC828524e59A333d0A371443c on hardhat w/ args: 
+Initial balance of deployer at 0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266 is: 990000000000000000000 at block timestamp : 1612972916
+
+Deployed CloneFactory to 0x3Aa5ebB10DC797CAC828524e59A333d0A371443c on hardhat w/ args: 
+
+Deployed ERC20MerkleDistributorWithClawbackFactory to 0xc6e7DF5E7b4f2A278906862b61205850344D4e7d on hardhat w/ args: 
+
+Deployed ERC721MerkleDistributorFactory to 0x59b670e9fA9D0A427751Af201D676719a970857b on hardhat w/ args: 
+
+Deployed FarmingFactory to 0x4ed7c70F96B99c776995fB64377f0d4aB3B0e1C1 on hardhat w/ args: 
+
+Deployed MintableNFTSaleFactory to 0x322813Fd9A801c5507c9de605d63CEA4f2CE6c44 on hardhat w/ args: 
+
+Deployed VoteEscrowFactory to 0xa85233C63b9Ee964Add6F2cffe00Fd84eb32338f on hardhat w/ args: 
+
+
+Deployment finished. Contracts deployed: 
+
+
+CloneFactory deployed to 0x3Aa5ebB10DC797CAC828524e59A333d0A371443c at https://hardhat.etherscan.io/address/0x3Aa5ebB10DC797CAC828524e59A333d0A371443c 
+ERC20MerkleDistributorWithClawbackFactory deployed to 0xc6e7DF5E7b4f2A278906862b61205850344D4e7d at https://hardhat.etherscan.io/address/0xc6e7DF5E7b4f2A278906862b61205850344D4e7d 
+ERC721MerkleDistributorFactory deployed to 0x59b670e9fA9D0A427751Af201D676719a970857b at https://hardhat.etherscan.io/address/0x59b670e9fA9D0A427751Af201D676719a970857b 
+FarmingFactory deployed to 0x4ed7c70F96B99c776995fB64377f0d4aB3B0e1C1 at https://hardhat.etherscan.io/address/0x4ed7c70F96B99c776995fB64377f0d4aB3B0e1C1 
+MintableNFTSaleFactory deployed to 0x322813Fd9A801c5507c9de605d63CEA4f2CE6c44 at https://hardhat.etherscan.io/address/0x322813Fd9A801c5507c9de605d63CEA4f2CE6c44 
+VoteEscrowFactory deployed to 0xa85233C63b9Ee964Add6F2cffe00Fd84eb32338f at https://hardhat.etherscan.io/address/0xa85233C63b9Ee964Add6F2cffe00Fd84eb32338f 
+Total cost of deploys: 23454654518724022 with gas settings: {}. Took 6 seconds
+starting _verifyAll
+Initial balance of deployer at 0x4f2bD410B81Ea24F83D1E807511BAec204c4Cf7a is: 18840511262914833539 at block timestamp : 1633196521
+
+Deployed CloneFactory to 0xD71e091F6d189574c2D2A9b2216A907dDC4b455f on rinkeby w/ args: 
+
+Deployed ERC20MerkleDistributorWithClawbackFactory to 0x259bA317Aa00B39369E4539E675cA66bA8282bcA on rinkeby w/ args: 
+
+Deployed ERC721MerkleDistributorFactory to 0x476be3acAf65E10A7F6bc6ab616285Ba04b804fA on rinkeby w/ args: 
+
+Deployed FarmingFactory to 0xa2EDadFFb7C39D0d00525ABAA85B34cEC1044bD0 on rinkeby w/ args: 
+
+Deployed MintableNFTSaleFactory to 0x480E1D7885C5b9D6d621e48740B4c491226b40dC on rinkeby w/ args: 
+
+Deployed VoteEscrowFactory to 0x53996f74e4fC7D8b5f036248813aEC714A3f4C6d on rinkeby w/ args: 
+
+
+Deployment finished. Contracts deployed: 
+
+
+CloneFactory deployed to 0xD71e091F6d189574c2D2A9b2216A907dDC4b455f at https://rinkeby.etherscan.io/address/0xD71e091F6d189574c2D2A9b2216A907dDC4b455f 
+ERC20MerkleDistributorWithClawbackFactory deployed to 0x259bA317Aa00B39369E4539E675cA66bA8282bcA at https://rinkeby.etherscan.io/address/0x259bA317Aa00B39369E4539E675cA66bA8282bcA 
+ERC721MerkleDistributorFactory deployed to 0x476be3acAf65E10A7F6bc6ab616285Ba04b804fA at https://rinkeby.etherscan.io/address/0x476be3acAf65E10A7F6bc6ab616285Ba04b804fA 
+FarmingFactory deployed to 0xa2EDadFFb7C39D0d00525ABAA85B34cEC1044bD0 at https://rinkeby.etherscan.io/address/0xa2EDadFFb7C39D0d00525ABAA85B34cEC1044bD0 
+MintableNFTSaleFactory deployed to 0x480E1D7885C5b9D6d621e48740B4c491226b40dC at https://rinkeby.etherscan.io/address/0x480E1D7885C5b9D6d621e48740B4c491226b40dC 
+VoteEscrowFactory deployed to 0x53996f74e4fC7D8b5f036248813aEC714A3f4C6d at https://rinkeby.etherscan.io/address/0x53996f74e4fC7D8b5f036248813aEC714A3f4C6d 
+Total cost of deploys: 13503661108029288 with gas settings: {"type":2,"maxFeePerGas":{"type":"BigNumber","hex":"0x3b9aca08"},"maxPriorityFeePerGas":{"type":"BigNumber","hex":"0x3b9aca07"},"gasLimit":10000000}. Took 90 seconds
+starting _verifyAll
+Waiting 10s to make sure everything has propagated on etherscan
+Verifying {"address":"0xD71e091F6d189574c2D2A9b2216A907dDC4b455f","args":[],"initialized":false,"name":"CloneFactory"} at 0xD71e091F6d189574c2D2A9b2216A907dDC4b455f 
+Verifying {"address":"0x259bA317Aa00B39369E4539E675cA66bA8282bcA","args":[],"initialized":false,"name":"ERC20MerkleDistributorWithClawbackFactory"} at 0x259bA317Aa00B39369E4539E675cA66bA8282bcA 
+Verifying {"address":"0x476be3acAf65E10A7F6bc6ab616285Ba04b804fA","args":[],"initialized":false,"name":"ERC721MerkleDistributorFactory"} at 0x476be3acAf65E10A7F6bc6ab616285Ba04b804fA 
+Verifying {"address":"0xa2EDadFFb7C39D0d00525ABAA85B34cEC1044bD0","args":[],"initialized":false,"name":"FarmingFactory"} at 0xa2EDadFFb7C39D0d00525ABAA85B34cEC1044bD0 
+Verifying {"address":"0x480E1D7885C5b9D6d621e48740B4c491226b40dC","args":[],"initialized":false,"name":"MintableNFTSaleFactory"} at 0x480E1D7885C5b9D6d621e48740B4c491226b40dC 
+Verified {"address":"0x259bA317Aa00B39369E4539E675cA66bA8282bcA","args":[],"initialized":false,"name":"ERC20MerkleDistributorWithClawbackFactory"} on network: rinkeby with constructor args 
+
+
+Verified {"address":"0xD71e091F6d189574c2D2A9b2216A907dDC4b455f","args":[],"initialized":false,"name":"CloneFactory"} on network: rinkeby with constructor args 
+
+
+Verified {"address":"0x476be3acAf65E10A7F6bc6ab616285Ba04b804fA","args":[],"initialized":false,"name":"ERC721MerkleDistributorFactory"} on network: rinkeby with constructor args 
+
+
+Verified {"address":"0xa2EDadFFb7C39D0d00525ABAA85B34cEC1044bD0","args":[],"initialized":false,"name":"FarmingFactory"} on network: rinkeby with constructor args 
+
+
+Verified {"address":"0x480E1D7885C5b9D6d621e48740B4c491226b40dC","args":[],"initialized":false,"name":"MintableNFTSaleFactory"} on network: rinkeby with constructor args 
+
+
+Waiting 2 s for Etherscan API limit of 5 calls/s
+Verifying {"address":"0x53996f74e4fC7D8b5f036248813aEC714A3f4C6d","args":[],"initialized":false,"name":"VoteEscrowFactory"} at 0x53996f74e4fC7D8b5f036248813aEC714A3f4C6d 
+Verified {"address":"0x53996f74e4fC7D8b5f036248813aEC714A3f4C6d","args":[],"initialized":false,"name":"VoteEscrowFactory"} on network: rinkeby with constructor args 
+
+
+Waiting 2 s for Etherscan API limit of 5 calls/s
+Verifications finished: 6 / 6 
+Initial balance of deployer at 0x4f2bD410B81Ea24F83D1E807511BAec204c4Cf7a is: 44382177613211278087 at block timestamp : 1633197030
+
+Deployed CloneFactory to 0x90e6AD5D179B81Fc924B65c400345e284aa861C7 on goerli w/ args: 
+Initial balance of deployer at 0x4f2bD410B81Ea24F83D1E807511BAec204c4Cf7a is: 44381647870420262883 at block timestamp : 1633197150
+
+Deployed CloneFactory to 0x48bbbDb49Cb68F3CF27Ec404427a2CeFA087d280 on goerli w/ args: 
+
+Deployed ERC20MerkleDistributorWithClawbackFactory to 0x86cd997046c5312FFcaD917aD6EAd30b4734D242 on goerli w/ args: 
+
+Deployed ERC721MerkleDistributorFactory to 0xb69daAeA15AD90E684109F302d840A0cbE62bfF1 on goerli w/ args: 
+
+Deployed FarmingFactory to 0x2f9fE5F3B0CD765151e1826F2002D6663e855a42 on goerli w/ args: 
+
+Deployed MintableNFTSaleFactory to 0xcEA3c90DB417971d5D182DF31AEC5AE387602a45 on goerli w/ args: 
+
+Deployed VoteEscrowFactory to 0xd4bEe00add16828aa1661c9FBfD2ebec1cEfaAd1 on goerli w/ args: 
+
+
+Deployment finished. Contracts deployed: 
+
+
+CloneFactory deployed to 0x48bbbDb49Cb68F3CF27Ec404427a2CeFA087d280 at https://goerli.etherscan.io/address/0x48bbbDb49Cb68F3CF27Ec404427a2CeFA087d280 
+ERC20MerkleDistributorWithClawbackFactory deployed to 0x86cd997046c5312FFcaD917aD6EAd30b4734D242 at https://goerli.etherscan.io/address/0x86cd997046c5312FFcaD917aD6EAd30b4734D242 
+ERC721MerkleDistributorFactory deployed to 0xb69daAeA15AD90E684109F302d840A0cbE62bfF1 at https://goerli.etherscan.io/address/0xb69daAeA15AD90E684109F302d840A0cbE62bfF1 
+FarmingFactory deployed to 0x2f9fE5F3B0CD765151e1826F2002D6663e855a42 at https://goerli.etherscan.io/address/0x2f9fE5F3B0CD765151e1826F2002D6663e855a42 
+MintableNFTSaleFactory deployed to 0xcEA3c90DB417971d5D182DF31AEC5AE387602a45 at https://goerli.etherscan.io/address/0xcEA3c90DB417971d5D182DF31AEC5AE387602a45 
+VoteEscrowFactory deployed to 0xd4bEe00add16828aa1661c9FBfD2ebec1cEfaAd1 at https://goerli.etherscan.io/address/0xd4bEe00add16828aa1661c9FBfD2ebec1cEfaAd1 
+Total cost of deploys: 30811067084158127 with gas settings: {"type":2,"maxFeePerGas":{"type":"BigNumber","hex":"0x87ffb64b"},"maxPriorityFeePerGas":{"type":"BigNumber","hex":"0x87ffb64a"},"gasLimit":10000000}. Took 135 seconds
+starting _verifyAll
+Waiting 10s to make sure everything has propagated on etherscan
+Verifying {"address":"0x48bbbDb49Cb68F3CF27Ec404427a2CeFA087d280","args":[],"initialized":false,"name":"CloneFactory"} at 0x48bbbDb49Cb68F3CF27Ec404427a2CeFA087d280 
+Verifying {"address":"0x86cd997046c5312FFcaD917aD6EAd30b4734D242","args":[],"initialized":false,"name":"ERC20MerkleDistributorWithClawbackFactory"} at 0x86cd997046c5312FFcaD917aD6EAd30b4734D242 
+Verifying {"address":"0xb69daAeA15AD90E684109F302d840A0cbE62bfF1","args":[],"initialized":false,"name":"ERC721MerkleDistributorFactory"} at 0xb69daAeA15AD90E684109F302d840A0cbE62bfF1 
+Verifying {"address":"0x2f9fE5F3B0CD765151e1826F2002D6663e855a42","args":[],"initialized":false,"name":"FarmingFactory"} at 0x2f9fE5F3B0CD765151e1826F2002D6663e855a42 
+Verifying {"address":"0xcEA3c90DB417971d5D182DF31AEC5AE387602a45","args":[],"initialized":false,"name":"MintableNFTSaleFactory"} at 0xcEA3c90DB417971d5D182DF31AEC5AE387602a45 
+Verified {"address":"0x48bbbDb49Cb68F3CF27Ec404427a2CeFA087d280","args":[],"initialized":false,"name":"CloneFactory"} on network: goerli with constructor args 
+
+
+Verified {"address":"0xb69daAeA15AD90E684109F302d840A0cbE62bfF1","args":[],"initialized":false,"name":"ERC721MerkleDistributorFactory"} on network: goerli with constructor args 
+
+
+Verified {"address":"0x86cd997046c5312FFcaD917aD6EAd30b4734D242","args":[],"initialized":false,"name":"ERC20MerkleDistributorWithClawbackFactory"} on network: goerli with constructor args 
+
+
+Verified {"address":"0x2f9fE5F3B0CD765151e1826F2002D6663e855a42","args":[],"initialized":false,"name":"FarmingFactory"} on network: goerli with constructor args 
+
+
+Verified {"address":"0xcEA3c90DB417971d5D182DF31AEC5AE387602a45","args":[],"initialized":false,"name":"MintableNFTSaleFactory"} on network: goerli with constructor args 
+
+
+Waiting 2 s for Etherscan API limit of 5 calls/s
+Verifying {"address":"0xd4bEe00add16828aa1661c9FBfD2ebec1cEfaAd1","args":[],"initialized":false,"name":"VoteEscrowFactory"} at 0xd4bEe00add16828aa1661c9FBfD2ebec1cEfaAd1 
+Verified {"address":"0xd4bEe00add16828aa1661c9FBfD2ebec1cEfaAd1","args":[],"initialized":false,"name":"VoteEscrowFactory"} on network: goerli with constructor args 
+
+
+Waiting 2 s for Etherscan API limit of 5 calls/s
+Verifications finished: 6 / 6 
+Initial balance of deployer at 0x4f2bD410B81Ea24F83D1E807511BAec204c4Cf7a is: 18815472286240665430 at block timestamp : 1633205140
+
+Deployed PaymentSplitterFactory to 0x88360B485146c4d5d780a5Fdb6eCd8C741A65CFa on rinkeby w/ args: 
+
+
+Deployment finished. Contracts deployed: 
+
+
+PaymentSplitterFactory deployed to 0x88360B485146c4d5d780a5Fdb6eCd8C741A65CFa at https://rinkeby.etherscan.io/address/0x88360B485146c4d5d780a5Fdb6eCd8C741A65CFa 
+Total cost of deploys: 886217007089736 with gas settings: {"type":2,"maxFeePerGas":{"type":"BigNumber","hex":"0x3b9aca08"},"maxPriorityFeePerGas":{"type":"BigNumber","hex":"0x3b9aca07"},"gasLimit":10000000}. Took 30 seconds
+starting _verifyAll
+Waiting 10s to make sure everything has propagated on etherscan
+Verifying {"address":"0x88360B485146c4d5d780a5Fdb6eCd8C741A65CFa","args":[],"initialized":false,"name":"PaymentSplitterFactory"} at 0x88360B485146c4d5d780a5Fdb6eCd8C741A65CFa 
+Etherscan verification failed w/ Error: ENOENT: no such file or directory, open '/Users/kaustavhaldar/Dev/crypto/sharedtools-factory/artifacts/build-info/f871c23c4d1152a3484321d9b56d803f.json' | Args:  | on rinkeby for 0x88360B485146c4d5d780a5Fdb6eCd8C741A65CFa
+Waiting 2 s for Etherscan API limit of 5 calls/s
+Verifications finished: 0 / 1 
+Initial balance of deployer at 0x4f2bD410B81Ea24F83D1E807511BAec204c4Cf7a is: 18814586069233575694 at block timestamp : 1633205380
+
+Deployed PaymentSplitterFactory to 0x8A53Ca850564Ae980bcF43a679d11cFe90FC418b on rinkeby w/ args: 
+
+
+Deployment finished. Contracts deployed: 
+
+
+PaymentSplitterFactory deployed to 0x8A53Ca850564Ae980bcF43a679d11cFe90FC418b at https://rinkeby.etherscan.io/address/0x8A53Ca850564Ae980bcF43a679d11cFe90FC418b 
+Total cost of deploys: 886217007975953 with gas settings: {"type":2,"maxFeePerGas":{"type":"BigNumber","hex":"0x3b9aca09"},"maxPriorityFeePerGas":{"type":"BigNumber","hex":"0x3b9aca08"},"gasLimit":10000000}. Took 30 seconds
+starting _verifyAll
+Waiting 10s to make sure everything has propagated on etherscan
+Verifying {"address":"0x8A53Ca850564Ae980bcF43a679d11cFe90FC418b","args":[],"initialized":false,"name":"PaymentSplitterFactory"} at 0x8A53Ca850564Ae980bcF43a679d11cFe90FC418b 
+Etherscan verification failed w/ Error: ENOENT: no such file or directory, open '/Users/kaustavhaldar/Dev/crypto/sharedtools-factory/artifacts/build-info/f871c23c4d1152a3484321d9b56d803f.json' | Args:  | on rinkeby for 0x8A53Ca850564Ae980bcF43a679d11cFe90FC418b
+Waiting 2 s for Etherscan API limit of 5 calls/s
+Verifications finished: 0 / 1 
+Initial balance of deployer at 0x4f2bD410B81Ea24F83D1E807511BAec204c4Cf7a is: 18813699852225599741 at block timestamp : 1633205545
+
+Deployed PaymentSplitterFactory to 0x4CE8807245d6798dcA1007cCBd1CA9add8e52303 on rinkeby w/ args: 
+
+
+Deployment finished. Contracts deployed: 
+
+
+PaymentSplitterFactory deployed to 0x4CE8807245d6798dcA1007cCBd1CA9add8e52303 at https://rinkeby.etherscan.io/address/0x4CE8807245d6798dcA1007cCBd1CA9add8e52303 
+Total cost of deploys: 886217007089736 with gas settings: {"type":2,"maxFeePerGas":{"type":"BigNumber","hex":"0x3b9aca08"},"maxPriorityFeePerGas":{"type":"BigNumber","hex":"0x3b9aca07"},"gasLimit":10000000}. Took 45 seconds
+starting _verifyAll
+Waiting 10s to make sure everything has propagated on etherscan
+Verifying {"address":"0x4CE8807245d6798dcA1007cCBd1CA9add8e52303","args":[],"initialized":false,"name":"PaymentSplitterFactory"} at 0x4CE8807245d6798dcA1007cCBd1CA9add8e52303 
+Etherscan verification failed w/ NomicLabsHardhatPluginError: Failed to send contract verification request.
+Endpoint URL: https://api-rinkeby.etherscan.io/api
+Reason: The Etherscan API responded that the address 0x4CE8807245d6798dcA1007cCBd1CA9add8e52303 does not have bytecode.
+This can happen if the contract was recently deployed and this fact hasn't propagated to the backend yet.
+Try waiting for a minute before verifying your contract. If you are invoking this from a script,
+try to wait for five confirmations of your contract deployment transaction before running the verification subtask. | Args:  | on rinkeby for 0x4CE8807245d6798dcA1007cCBd1CA9add8e52303
+Waiting 2 s for Etherscan API limit of 5 calls/s
+Verifications finished: 0 / 1 
+Initial balance of deployer at 0x4f2bD410B81Ea24F83D1E807511BAec204c4Cf7a is: 18812813635218510005 at block timestamp : 1633205695
+
+Deployed PaymentSplitterFactory to 0x60d09097d21Aca152e6825EFEADE395609F6a025 on rinkeby w/ args: 
+
+
+Deployment finished. Contracts deployed: 
+
+
+PaymentSplitterFactory deployed to 0x60d09097d21Aca152e6825EFEADE395609F6a025 at https://rinkeby.etherscan.io/address/0x60d09097d21Aca152e6825EFEADE395609F6a025 
+Total cost of deploys: 886217007089736 with gas settings: {"type":2,"maxFeePerGas":{"type":"BigNumber","hex":"0x3b9aca08"},"maxPriorityFeePerGas":{"type":"BigNumber","hex":"0x3b9aca07"},"gasLimit":10000000}. Took 30 seconds
+starting _verifyAll
+Waiting 10s to make sure everything has propagated on etherscan
+Verifying {"address":"0x60d09097d21Aca152e6825EFEADE395609F6a025","args":[],"initialized":false,"name":"PaymentSplitterFactory"} at 0x60d09097d21Aca152e6825EFEADE395609F6a025 
+Verified {"address":"0x60d09097d21Aca152e6825EFEADE395609F6a025","args":[],"initialized":false,"name":"PaymentSplitterFactory"} on network: rinkeby with constructor args 
+
+
+Waiting 2 s for Etherscan API limit of 5 calls/s
+Verifications finished: 1 / 1 
+Initial balance of deployer at 0x4f2bD410B81Ea24F83D1E807511BAec204c4Cf7a is: 18811426548207413309 at block timestamp : 1633206025
+
+Deployed PaymentSplitterFactory to 0xB02d792E290DEc52255d01b221686b4A11254268 on rinkeby w/ args: 
+
+
+Deployment finished. Contracts deployed: 
+
+
+PaymentSplitterFactory deployed to 0xB02d792E290DEc52255d01b221686b4A11254268 at https://rinkeby.etherscan.io/address/0xB02d792E290DEc52255d01b221686b4A11254268 
+Total cost of deploys: 867022006936176 with gas settings: {"type":2,"maxFeePerGas":{"type":"BigNumber","hex":"0x3b9aca08"},"maxPriorityFeePerGas":{"type":"BigNumber","hex":"0x3b9aca07"},"gasLimit":10000000}. Took 15 seconds
+starting _verifyAll
+Waiting 10s to make sure everything has propagated on etherscan
+Verifying {"address":"0xB02d792E290DEc52255d01b221686b4A11254268","args":[],"initialized":false,"name":"PaymentSplitterFactory"} at 0xB02d792E290DEc52255d01b221686b4A11254268 
+Verified {"address":"0xB02d792E290DEc52255d01b221686b4A11254268","args":[],"initialized":false,"name":"PaymentSplitterFactory"} on network: rinkeby with constructor args 
+
+
+Waiting 2 s for Etherscan API limit of 5 calls/s
+Verifications finished: 1 / 1 
+Initial balance of deployer at 0x4f2bD410B81Ea24F83D1E807511BAec204c4Cf7a is: 18810057965196464645 at block timestamp : 1633206792
+
+Deployed FundDistributor to 0x9e52dB44d62A8c9762FA847Bd2eBa9d0585782d1 on rinkeby w/ args: 
+
+
+Deployment finished. Contracts deployed: 
+
+
+FundDistributor deployed to 0x9e52dB44d62A8c9762FA847Bd2eBa9d0585782d1 at https://rinkeby.etherscan.io/address/0x9e52dB44d62A8c9762FA847Bd2eBa9d0585782d1 
+Total cost of deploys: 740338005922704 with gas settings: {"type":2,"maxFeePerGas":{"type":"BigNumber","hex":"0x3b9aca09"},"maxPriorityFeePerGas":{"type":"BigNumber","hex":"0x3b9aca08"},"gasLimit":10000000}. Took 15 seconds
+starting _verifyAll
+Waiting 10s to make sure everything has propagated on etherscan
+Verifying {"address":"0x9e52dB44d62A8c9762FA847Bd2eBa9d0585782d1","args":[],"initialized":false,"name":"FundDistributor"} at 0x9e52dB44d62A8c9762FA847Bd2eBa9d0585782d1 
+Verified {"address":"0x9e52dB44d62A8c9762FA847Bd2eBa9d0585782d1","args":[],"initialized":false,"name":"FundDistributor"} on network: rinkeby with constructor args 
+
+
+Waiting 2 s for Etherscan API limit of 5 calls/s
+Verifications finished: 1 / 1 
+Initial balance of deployer at 0x4f2bD410B81Ea24F83D1E807511BAec204c4Cf7a is: 18808885147186589978 at block timestamp : 1633208594
+Initial balance of deployer at 0x4f2bD410B81Ea24F83D1E807511BAec204c4Cf7a is: 18808885147186589978 at block timestamp : 1633208624
+Initial balance of deployer at 0x4f2bD410B81Ea24F83D1E807511BAec204c4Cf7a is: 18808885147186589978 at block timestamp : 1633208714
+
+Deployed FarmingFactory to 0x53C628bFae246cC85d87318CbB483eC05D4304Bf on rinkeby w/ args: 
+
+
+Deployment finished. Contracts deployed: 
+
+
+FarmingFactory deployed to 0x53C628bFae246cC85d87318CbB483eC05D4304Bf at https://rinkeby.etherscan.io/address/0x53C628bFae246cC85d87318CbB483eC05D4304Bf 
+Total cost of deploys: 2725541021804328 with gas settings: {"type":2,"maxFeePerGas":{"type":"BigNumber","hex":"0x3b9aca08"},"maxPriorityFeePerGas":{"type":"BigNumber","hex":"0x3b9aca07"},"gasLimit":10000000}. Took 15 seconds
+starting _verifyAll
+Waiting 10s to make sure everything has propagated on etherscan
+Verifying {"address":"0x53C628bFae246cC85d87318CbB483eC05D4304Bf","args":[],"initialized":false,"name":"FarmingFactory"} at 0x53C628bFae246cC85d87318CbB483eC05D4304Bf 
+Verified {"address":"0x53C628bFae246cC85d87318CbB483eC05D4304Bf","args":[],"initialized":false,"name":"FarmingFactory"} on network: rinkeby with constructor args 
+
+
+Waiting 2 s for Etherscan API limit of 5 calls/s
+Verifications finished: 1 / 1 
+{"FarmingFactory":{"TITLE":"FarmingFactory","LOGO":"🏆🚀","ABI":"FarmingFactory","VAULT_TYPE":"experimental","ADDR":"0x53C628bFae246cC85d87318CbB483eC05D4304Bf","CHAIN_ID":{}}}
+Initial balance of deployer at 0x4f2bD410B81Ea24F83D1E807511BAec204c4Cf7a is: 18806159606164785650 at block timestamp : 1633208864
+
+Deployed FarmingFactory to 0xd512bf74b5078F3a4F9008AdcC4203e82C70f58c on rinkeby w/ args: 
+
+
+Deployment finished. Contracts deployed: 
+
+
+FarmingFactory deployed to 0xd512bf74b5078F3a4F9008AdcC4203e82C70f58c at https://rinkeby.etherscan.io/address/0xd512bf74b5078F3a4F9008AdcC4203e82C70f58c 
+Total cost of deploys: 2725541021804328 with gas settings: {"type":2,"maxFeePerGas":{"type":"BigNumber","hex":"0x3b9aca08"},"maxPriorityFeePerGas":{"type":"BigNumber","hex":"0x3b9aca07"},"gasLimit":10000000}. Took 15 seconds
+starting _verifyAll
+Waiting 10s to make sure everything has propagated on etherscan
+Verifying {"address":"0xd512bf74b5078F3a4F9008AdcC4203e82C70f58c","args":[],"initialized":false,"name":"FarmingFactory"} at 0xd512bf74b5078F3a4F9008AdcC4203e82C70f58c 
+Verified {"address":"0xd512bf74b5078F3a4F9008AdcC4203e82C70f58c","args":[],"initialized":false,"name":"FarmingFactory"} on network: rinkeby with constructor args 
+
+
+Waiting 2 s for Etherscan API limit of 5 calls/s
+Verifications finished: 1 / 1 
+{"FarmingFactory":{"TITLE":"FarmingFactory","LOGO":"🏆🚀","ABI":"FarmingFactory","VAULT_TYPE":"experimental","ADDR":"0xd512bf74b5078F3a4F9008AdcC4203e82C70f58c","CHAIN_ID":"4"}}
+Initial balance of deployer at 0x4f2bD410B81Ea24F83D1E807511BAec204c4Cf7a is: 18803434065142981322 at block timestamp : 1633209391
+
+Deployed CloneFactory to 0xAa5315C267E6A71b56FEb1eF0FD66A5f4d707cdd on rinkeby w/ args: 
+
+Deployed ERC20MerkleDistributorWithClawbackFactory to 0x993DDAaBfFDd42d7f0525Bcd32ac9Eb37D450Dd5 on rinkeby w/ args: 
+
+Deployed ERC721MerkleDistributorFactory to 0xEA6692c4b1819B8D41dD154318cA64234d23739d on rinkeby w/ args: 
+
+Deployed FarmingFactory to 0x83d261f8A17F5B57d42a7Af1bef9db81E9354D16 on rinkeby w/ args: 
+
+Deployed MintableNFTSaleFactory to 0x6b14804eCd7324Fe61F3FC8260615a8EF1c484DA on rinkeby w/ args: 
+
+Deployed PaymentSplitterFactory to 0xf56BF813fa1B1A7d9bF7f45e1F7681C693fe5e64 on rinkeby w/ args: 
+
+Deployed VoteEscrowFactory to 0x35331e54117bF2d91cCddd2F770828c2020D69dD on rinkeby w/ args: 
+Initial balance of deployer at 0x4f2bD410B81Ea24F83D1E807511BAec204c4Cf7a is: 18789395840030675522 at block timestamp : 1633209646
+
+Deployed CloneFactory to 0xAA4aaF976AcdA026ce92c03A65210A266a4dfC0f on rinkeby w/ args: 
+
+Deployed ERC20MerkleDistributorWithClawbackFactory to 0x43B687b2d5E59f735cB8C19f876e816892545405 on rinkeby w/ args: 
+
+Deployed ERC721MerkleDistributorFactory to 0x1A4f36ac089526E40a7b40f6Bf1867Cf84DE39Be on rinkeby w/ args: 
+
+Deployed FarmingFactory to 0x5032492c95Da3dD69e902473Ae8892e090a95ee2 on rinkeby w/ args: 
+
+Deployed MintableNFTSaleFactory to 0xE3a9242762A03C91fC2042C9F05AD25679cE2AaF on rinkeby w/ args: 
+
+Deployed PaymentSplitterFactory to 0x1473f242A60797E7d7e003b666B3D4001FF58BD9 on rinkeby w/ args: 
+
+Deployed VoteEscrowFactory to 0xc7B32CBBcE26Cf99e7cf84F49Df3f20581d761a4 on rinkeby w/ args: 
+Initial balance of deployer at 0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266 is: 990000000000000000000 at block timestamp : 1612972916
+Initial balance of deployer at 0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266 is: 990000000000000000000 at block timestamp : 1612972916
+Initial balance of deployer at 0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266 is: 990000000000000000000 at block timestamp : 1612972916
+Initial balance of deployer at 0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266 is: 990000000000000000000 at block timestamp : 1612972916
+Attempting to deploy ERC20PresetFixedSupply - ERC20PresetFixedSupply - test,test,10000
+Initial balance of deployer at 0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266 is: 990000000000000000000 at block timestamp : 1612972916
+Attempting to deploy ERC20PresetFixedSupply - ERC20PresetFixedSupply - test,test,10000,0x0000000000000000000000000000000000000000
+Initial balance of deployer at 0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266 is: 990000000000000000000 at block timestamp : 1612972916
+Attempting to deploy ERC20PresetFixedSupply - ERC20PresetFixedSupply - test,test,10000,0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266
+
+Deployed ERC20PresetFixedSupply to 0x3Aa5ebB10DC797CAC828524e59A333d0A371443c on hardhat w/ args: test,test,10000,0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266
+Attempting to deploy FundDistributor - FundDistributor - 0x3Aa5ebB10DC797CAC828524e59A333d0A371443c
+
+Deployed FundDistributor to 0xc6e7DF5E7b4f2A278906862b61205850344D4e7d on hardhat w/ args: 0x3Aa5ebB10DC797CAC828524e59A333d0A371443c
+Attempting to deploy PaymentSplitter - PaymentSplitter - 0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266,100
+
+Deployed PaymentSplitter to 0x59b670e9fA9D0A427751Af201D676719a970857b on hardhat w/ args: 0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266,100
+Attempting to deploy MasterChef - MasterChef - 0x3Aa5ebB10DC797CAC828524e59A333d0A371443c,0xc6e7DF5E7b4f2A278906862b61205850344D4e7d,0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266
+
+Deployed MasterChef to 0x4ed7c70F96B99c776995fB64377f0d4aB3B0e1C1 on hardhat w/ args: 0x3Aa5ebB10DC797CAC828524e59A333d0A371443c,0xc6e7DF5E7b4f2A278906862b61205850344D4e7d,0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266
+Attempting to deploy MintableNFTSale - MintableNFTSale - testNft,tnft,0x59b670e9fA9D0A427751Af201D676719a970857b,100,100,1,1,1,
+
+Deployed MintableNFTSale to 0x322813Fd9A801c5507c9de605d63CEA4f2CE6c44 on hardhat w/ args: testNft,tnft,0x59b670e9fA9D0A427751Af201D676719a970857b,100,100,1,1,1,
+Attempting to deploy VoteEscrow - VoteEscrow - veTst,vtst,0x3Aa5ebB10DC797CAC828524e59A333d0A371443c,1
+
+Deployed VoteEscrow to 0xa85233C63b9Ee964Add6F2cffe00Fd84eb32338f on hardhat w/ args: veTst,vtst,0x3Aa5ebB10DC797CAC828524e59A333d0A371443c,1
+Attempting to deploy CloneFactory - CloneFactory - undefined
+
+Deployed CloneFactory to 0x4A679253410272dd5232B3Ff7cF5dbB88f295319 on hardhat w/ args: 
+Attempting to deploy ERC20CappedFactory - ERC20CappedFactory - undefined
+Initial balance of deployer at 0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266 is: 990000000000000000000 at block timestamp : 1612972916
+Attempting to deploy ERC20PresetFixedSupply - ERC20PresetFixedSupply - test,test,10000,0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266
+
+Deployed ERC20PresetFixedSupply to 0x3Aa5ebB10DC797CAC828524e59A333d0A371443c on hardhat w/ args: test,test,10000,0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266
+Attempting to deploy FundDistributor - FundDistributor - 0x3Aa5ebB10DC797CAC828524e59A333d0A371443c
+
+Deployed FundDistributor to 0xc6e7DF5E7b4f2A278906862b61205850344D4e7d on hardhat w/ args: 0x3Aa5ebB10DC797CAC828524e59A333d0A371443c
+Attempting to deploy PaymentSplitter - PaymentSplitter - 0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266,100
+
+Deployed PaymentSplitter to 0x59b670e9fA9D0A427751Af201D676719a970857b on hardhat w/ args: 0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266,100
+Attempting to deploy MasterChef - MasterChef - 0x3Aa5ebB10DC797CAC828524e59A333d0A371443c,0xc6e7DF5E7b4f2A278906862b61205850344D4e7d,0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266
+
+Deployed MasterChef to 0x4ed7c70F96B99c776995fB64377f0d4aB3B0e1C1 on hardhat w/ args: 0x3Aa5ebB10DC797CAC828524e59A333d0A371443c,0xc6e7DF5E7b4f2A278906862b61205850344D4e7d,0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266
+Attempting to deploy MintableNFTSale - MintableNFTSale - testNft,tnft,0x59b670e9fA9D0A427751Af201D676719a970857b,100,100,1,1,1,
+
+Deployed MintableNFTSale to 0x322813Fd9A801c5507c9de605d63CEA4f2CE6c44 on hardhat w/ args: testNft,tnft,0x59b670e9fA9D0A427751Af201D676719a970857b,100,100,1,1,1,
+Attempting to deploy VoteEscrow - VoteEscrow - veTst,vtst,0x3Aa5ebB10DC797CAC828524e59A333d0A371443c,1
+
+Deployed VoteEscrow to 0xa85233C63b9Ee964Add6F2cffe00Fd84eb32338f on hardhat w/ args: veTst,vtst,0x3Aa5ebB10DC797CAC828524e59A333d0A371443c,1
+Attempting to deploy CloneFactory - CloneFactory - undefined
+
+Deployed CloneFactory to 0x4A679253410272dd5232B3Ff7cF5dbB88f295319 on hardhat w/ args: 
+Attempting to deploy ERC20MerkleDistributorWithClawbackFactory - ERC20MerkleDistributorWithClawbackFactory - undefined
+
+Deployed ERC20MerkleDistributorWithClawbackFactory to 0x7a2088a1bFc9d81c55368AE168C2C02570cB814F on hardhat w/ args: 
+Attempting to deploy ERC20PresetFixedSupplyFactory - ERC20PresetFixedSupplyFactory - undefined
+
+Deployed ERC20PresetFixedSupplyFactory to 0x09635F643e140090A9A8Dcd712eD6285858ceBef on hardhat w/ args: 
+Attempting to deploy ERC721MerkleDistributorFactory - ERC721MerkleDistributorFactory - undefined
+
+Deployed ERC721MerkleDistributorFactory to 0xc5a5C42992dECbae36851359345FE25997F5C42d on hardhat w/ args: 
+Attempting to deploy FarmingFactory - FarmingFactory - undefined
+
+Deployed FarmingFactory to 0x67d269191c92Caf3cD7723F116c85e6E9bf55933 on hardhat w/ args: 
+Attempting to deploy MintableNFTSaleFactory - MintableNFTSaleFactory - undefined
+
+Deployed MintableNFTSaleFactory to 0xE6E340D132b5f46d1e472DebcD681B2aBc16e57E on hardhat w/ args: 
+Attempting to deploy PaymentSplitterFactory - PaymentSplitterFactory - undefined
+
+Deployed PaymentSplitterFactory to 0xc3e53F4d16Ae77Db1c982e75a937B9f60FE63690 on hardhat w/ args: 
+Attempting to deploy VoteEscrowFactory - VoteEscrowFactory - undefined
+
+Deployed VoteEscrowFactory to 0x84eA74d481Ee0A5332c457a4d796187F6Ba67fEB on hardhat w/ args: 
+
+
+Deployment finished. Contracts deployed: 
+
+
+ERC20PresetFixedSupply deployed to 0x3Aa5ebB10DC797CAC828524e59A333d0A371443c at https://hardhat.etherscan.io/address/0x3Aa5ebB10DC797CAC828524e59A333d0A371443c 
+FundDistributor deployed to 0xc6e7DF5E7b4f2A278906862b61205850344D4e7d at https://hardhat.etherscan.io/address/0xc6e7DF5E7b4f2A278906862b61205850344D4e7d 
+PaymentSplitter deployed to 0x59b670e9fA9D0A427751Af201D676719a970857b at https://hardhat.etherscan.io/address/0x59b670e9fA9D0A427751Af201D676719a970857b 
+MasterChef deployed to 0x4ed7c70F96B99c776995fB64377f0d4aB3B0e1C1 at https://hardhat.etherscan.io/address/0x4ed7c70F96B99c776995fB64377f0d4aB3B0e1C1 
+MintableNFTSale deployed to 0x322813Fd9A801c5507c9de605d63CEA4f2CE6c44 at https://hardhat.etherscan.io/address/0x322813Fd9A801c5507c9de605d63CEA4f2CE6c44 
+VoteEscrow deployed to 0xa85233C63b9Ee964Add6F2cffe00Fd84eb32338f at https://hardhat.etherscan.io/address/0xa85233C63b9Ee964Add6F2cffe00Fd84eb32338f 
+CloneFactory deployed to 0x4A679253410272dd5232B3Ff7cF5dbB88f295319 at https://hardhat.etherscan.io/address/0x4A679253410272dd5232B3Ff7cF5dbB88f295319 
+ERC20MerkleDistributorWithClawbackFactory deployed to 0x7a2088a1bFc9d81c55368AE168C2C02570cB814F at https://hardhat.etherscan.io/address/0x7a2088a1bFc9d81c55368AE168C2C02570cB814F 
+ERC20PresetFixedSupplyFactory deployed to 0x09635F643e140090A9A8Dcd712eD6285858ceBef at https://hardhat.etherscan.io/address/0x09635F643e140090A9A8Dcd712eD6285858ceBef 
+ERC721MerkleDistributorFactory deployed to 0xc5a5C42992dECbae36851359345FE25997F5C42d at https://hardhat.etherscan.io/address/0xc5a5C42992dECbae36851359345FE25997F5C42d 
+FarmingFactory deployed to 0x67d269191c92Caf3cD7723F116c85e6E9bf55933 at https://hardhat.etherscan.io/address/0x67d269191c92Caf3cD7723F116c85e6E9bf55933 
+MintableNFTSaleFactory deployed to 0xE6E340D132b5f46d1e472DebcD681B2aBc16e57E at https://hardhat.etherscan.io/address/0xE6E340D132b5f46d1e472DebcD681B2aBc16e57E 
+PaymentSplitterFactory deployed to 0xc3e53F4d16Ae77Db1c982e75a937B9f60FE63690 at https://hardhat.etherscan.io/address/0xc3e53F4d16Ae77Db1c982e75a937B9f60FE63690 
+VoteEscrowFactory deployed to 0x84eA74d481Ee0A5332c457a4d796187F6Ba67fEB at https://hardhat.etherscan.io/address/0x84eA74d481Ee0A5332c457a4d796187F6Ba67fEB 
+Total cost of deploys: 38697295231317036 with gas settings: {}. Took 14 seconds
+starting _verifyAll
+{"ERC20PresetFixedSupply":{"TITLE":"ERC20PresetFixedSupply","LOGO":"🏆🚀","ABI":"ERC20PresetFixedSupply","VAULT_TYPE":"experimental","ADDR":"0x3Aa5ebB10DC797CAC828524e59A333d0A371443c","CHAIN_ID":"31337"},"FundDistributor":{"TITLE":"FundDistributor","LOGO":"🏆🚀","ABI":"FundDistributor","VAULT_TYPE":"experimental","ADDR":"0xc6e7DF5E7b4f2A278906862b61205850344D4e7d","CHAIN_ID":"31337"},"PaymentSplitter":{"TITLE":"PaymentSplitter","LOGO":"🏆🚀","ABI":"PaymentSplitter","VAULT_TYPE":"experimental","ADDR":"0x59b670e9fA9D0A427751Af201D676719a970857b","CHAIN_ID":"31337"},"MasterChef":{"TITLE":"MasterChef","LOGO":"🏆🚀","ABI":"MasterChef","VAULT_TYPE":"experimental","ADDR":"0x4ed7c70F96B99c776995fB64377f0d4aB3B0e1C1","CHAIN_ID":"31337"},"MintableNFTSale":{"TITLE":"MintableNFTSale","LOGO":"🏆🚀","ABI":"MintableNFTSale","VAULT_TYPE":"experimental","ADDR":"0x322813Fd9A801c5507c9de605d63CEA4f2CE6c44","CHAIN_ID":"31337"},"VoteEscrow":{"TITLE":"VoteEscrow","LOGO":"🏆🚀","ABI":"VoteEscrow","VAULT_TYPE":"experimental","ADDR":"0xa85233C63b9Ee964Add6F2cffe00Fd84eb32338f","CHAIN_ID":"31337"},"CloneFactory":{"TITLE":"CloneFactory","LOGO":"🏆🚀","ABI":"CloneFactory","VAULT_TYPE":"experimental","ADDR":"0x4A679253410272dd5232B3Ff7cF5dbB88f295319","CHAIN_ID":"31337"},"ERC20MerkleDistributorWithClawbackFactory":{"TITLE":"ERC20MerkleDistributorWithClawbackFactory","LOGO":"🏆🚀","ABI":"ERC20MerkleDistributorWithClawbackFactory","VAULT_TYPE":"experimental","ADDR":"0x7a2088a1bFc9d81c55368AE168C2C02570cB814F","CHAIN_ID":"31337"},"ERC20PresetFixedSupplyFactory":{"TITLE":"ERC20PresetFixedSupplyFactory","LOGO":"🏆🚀","ABI":"ERC20PresetFixedSupplyFactory","VAULT_TYPE":"experimental","ADDR":"0x09635F643e140090A9A8Dcd712eD6285858ceBef","CHAIN_ID":"31337"},"ERC721MerkleDistributorFactory":{"TITLE":"ERC721MerkleDistributorFactory","LOGO":"🏆🚀","ABI":"ERC721MerkleDistributorFactory","VAULT_TYPE":"experimental","ADDR":"0xc5a5C42992dECbae36851359345FE25997F5C42d","CHAIN_ID":"31337"},"FarmingFactory":{"TITLE":"FarmingFactory","LOGO":"🏆🚀","ABI":"FarmingFactory","VAULT_TYPE":"experimental","ADDR":"0x67d269191c92Caf3cD7723F116c85e6E9bf55933","CHAIN_ID":"31337"},"MintableNFTSaleFactory":{"TITLE":"MintableNFTSaleFactory","LOGO":"🏆🚀","ABI":"MintableNFTSaleFactory","VAULT_TYPE":"experimental","ADDR":"0xE6E340D132b5f46d1e472DebcD681B2aBc16e57E","CHAIN_ID":"31337"},"PaymentSplitterFactory":{"TITLE":"PaymentSplitterFactory","LOGO":"🏆🚀","ABI":"PaymentSplitterFactory","VAULT_TYPE":"experimental","ADDR":"0xc3e53F4d16Ae77Db1c982e75a937B9f60FE63690","CHAIN_ID":"31337"},"VoteEscrowFactory":{"TITLE":"VoteEscrowFactory","LOGO":"🏆🚀","ABI":"VoteEscrowFactory","VAULT_TYPE":"experimental","ADDR":"0x84eA74d481Ee0A5332c457a4d796187F6Ba67fEB","CHAIN_ID":"31337"}}
+Initial balance of deployer at 0x4f2bD410B81Ea24F83D1E807511BAec204c4Cf7a is: 18775357614918369722 at block timestamp : 1633211477
+Attempting to deploy ERC20PresetFixedSupply - ERC20PresetFixedSupply - test,test,10000,0x4f2bD410B81Ea24F83D1E807511BAec204c4Cf7a
+
+Deployed ERC20PresetFixedSupply to 0x2B7cAcDCD736B48d840786A2dF7DaEB757f796a4 on rinkeby w/ args: test,test,10000,0x4f2bD410B81Ea24F83D1E807511BAec204c4Cf7a
+Attempting to deploy FundDistributor - FundDistributor - 0x2B7cAcDCD736B48d840786A2dF7DaEB757f796a4
+
+Deployed FundDistributor to 0xA308f4a980C4a2960e9E87fC51DBf2b0B50CA432 on rinkeby w/ args: 0x2B7cAcDCD736B48d840786A2dF7DaEB757f796a4
+Attempting to deploy PaymentSplitter - PaymentSplitter - 0x4f2bD410B81Ea24F83D1E807511BAec204c4Cf7a,100
+
+Deployed PaymentSplitter to 0xBdcCA321A51FD51cF3349E7BD1Ee5F0fe6CEe312 on rinkeby w/ args: 0x4f2bD410B81Ea24F83D1E807511BAec204c4Cf7a,100
+Attempting to deploy MasterChef - MasterChef - 0x2B7cAcDCD736B48d840786A2dF7DaEB757f796a4,0xA308f4a980C4a2960e9E87fC51DBf2b0B50CA432,0x4f2bD410B81Ea24F83D1E807511BAec204c4Cf7a
+
+Deployed MasterChef to 0x504BB82e9f373A18Bc78F426A9aB150003B35C1D on rinkeby w/ args: 0x2B7cAcDCD736B48d840786A2dF7DaEB757f796a4,0xA308f4a980C4a2960e9E87fC51DBf2b0B50CA432,0x4f2bD410B81Ea24F83D1E807511BAec204c4Cf7a
+Attempting to deploy MintableNFTSale - MintableNFTSale - testNft,tnft,0xBdcCA321A51FD51cF3349E7BD1Ee5F0fe6CEe312,100,100,1,1,1,
+
+Deployed MintableNFTSale to 0xFb2f09C974858b7F302B7030ab38d049d6a86883 on rinkeby w/ args: testNft,tnft,0xBdcCA321A51FD51cF3349E7BD1Ee5F0fe6CEe312,100,100,1,1,1,
+Attempting to deploy VoteEscrow - VoteEscrow - veTst,vtst,0x2B7cAcDCD736B48d840786A2dF7DaEB757f796a4,1
+
+Deployed VoteEscrow to 0x1742f8285D3f1C337B9c7d1485ED999032689A73 on rinkeby w/ args: veTst,vtst,0x2B7cAcDCD736B48d840786A2dF7DaEB757f796a4,1
+Attempting to deploy CloneFactory - CloneFactory - undefined
+
+Deployed CloneFactory to 0xdD3FcC2fAAD6DfAC0426c3545CF335DD33D94A5B on rinkeby w/ args: 
+Attempting to deploy ERC20MerkleDistributorWithClawbackFactory - ERC20MerkleDistributorWithClawbackFactory - undefined
+
+Deployed ERC20MerkleDistributorWithClawbackFactory to 0x5e143Fc7C3d1c28A4eCFF237EecFCa0124f2AA55 on rinkeby w/ args: 
+Attempting to deploy ERC20PresetFixedSupplyFactory - ERC20PresetFixedSupplyFactory - undefined
+
+Deployed ERC20PresetFixedSupplyFactory to 0x3942B96B76C23268c27BaD803A1A51578B32BF18 on rinkeby w/ args: 
+Attempting to deploy ERC721MerkleDistributorFactory - ERC721MerkleDistributorFactory - undefined
+
+Deployed ERC721MerkleDistributorFactory to 0x216A632b190C20E1a3AFf305563452d1F1624061 on rinkeby w/ args: 
+Attempting to deploy FarmingFactory - FarmingFactory - undefined
+
+Deployed FarmingFactory to 0x7e6421378623D490082f979a105C186E3ab64996 on rinkeby w/ args: 
+Attempting to deploy MintableNFTSaleFactory - MintableNFTSaleFactory - undefined
+
+Deployed MintableNFTSaleFactory to 0x09fE664C52513969E216982BD620273C2c345a87 on rinkeby w/ args: 
+Attempting to deploy PaymentSplitterFactory - PaymentSplitterFactory - undefined
+
+Deployed PaymentSplitterFactory to 0x71788674b3Ac611BA7Fa42E1B7D8443674B94eDa on rinkeby w/ args: 
+Attempting to deploy VoteEscrowFactory - VoteEscrowFactory - undefined
+
+Deployed VoteEscrowFactory to 0xf4b34AD30F3810617B6f89aba21Cd33e0b9742fB on rinkeby w/ args: 
+
+
+Deployment finished. Contracts deployed: 
+
+
+ERC20PresetFixedSupply deployed to 0x2B7cAcDCD736B48d840786A2dF7DaEB757f796a4 at https://rinkeby.etherscan.io/address/0x2B7cAcDCD736B48d840786A2dF7DaEB757f796a4 
+FundDistributor deployed to 0xA308f4a980C4a2960e9E87fC51DBf2b0B50CA432 at https://rinkeby.etherscan.io/address/0xA308f4a980C4a2960e9E87fC51DBf2b0B50CA432 
+PaymentSplitter deployed to 0xBdcCA321A51FD51cF3349E7BD1Ee5F0fe6CEe312 at https://rinkeby.etherscan.io/address/0xBdcCA321A51FD51cF3349E7BD1Ee5F0fe6CEe312 
+MasterChef deployed to 0x504BB82e9f373A18Bc78F426A9aB150003B35C1D at https://rinkeby.etherscan.io/address/0x504BB82e9f373A18Bc78F426A9aB150003B35C1D 
+MintableNFTSale deployed to 0xFb2f09C974858b7F302B7030ab38d049d6a86883 at https://rinkeby.etherscan.io/address/0xFb2f09C974858b7F302B7030ab38d049d6a86883 
+VoteEscrow deployed to 0x1742f8285D3f1C337B9c7d1485ED999032689A73 at https://rinkeby.etherscan.io/address/0x1742f8285D3f1C337B9c7d1485ED999032689A73 
+CloneFactory deployed to 0xdD3FcC2fAAD6DfAC0426c3545CF335DD33D94A5B at https://rinkeby.etherscan.io/address/0xdD3FcC2fAAD6DfAC0426c3545CF335DD33D94A5B 
+ERC20MerkleDistributorWithClawbackFactory deployed to 0x5e143Fc7C3d1c28A4eCFF237EecFCa0124f2AA55 at https://rinkeby.etherscan.io/address/0x5e143Fc7C3d1c28A4eCFF237EecFCa0124f2AA55 
+ERC20PresetFixedSupplyFactory deployed to 0x3942B96B76C23268c27BaD803A1A51578B32BF18 at https://rinkeby.etherscan.io/address/0x3942B96B76C23268c27BaD803A1A51578B32BF18 
+ERC721MerkleDistributorFactory deployed to 0x216A632b190C20E1a3AFf305563452d1F1624061 at https://rinkeby.etherscan.io/address/0x216A632b190C20E1a3AFf305563452d1F1624061 
+FarmingFactory deployed to 0x7e6421378623D490082f979a105C186E3ab64996 at https://rinkeby.etherscan.io/address/0x7e6421378623D490082f979a105C186E3ab64996 
+MintableNFTSaleFactory deployed to 0x09fE664C52513969E216982BD620273C2c345a87 at https://rinkeby.etherscan.io/address/0x09fE664C52513969E216982BD620273C2c345a87 
+PaymentSplitterFactory deployed to 0x71788674b3Ac611BA7Fa42E1B7D8443674B94eDa at https://rinkeby.etherscan.io/address/0x71788674b3Ac611BA7Fa42E1B7D8443674B94eDa 
+VoteEscrowFactory deployed to 0xf4b34AD30F3810617B6f89aba21Cd33e0b9742fB at https://rinkeby.etherscan.io/address/0xf4b34AD30F3810617B6f89aba21Cd33e0b9742fB 
+Total cost of deploys: 25434098215942235 with gas settings: {"type":2,"maxFeePerGas":{"type":"BigNumber","hex":"0x3b9aca08"},"maxPriorityFeePerGas":{"type":"BigNumber","hex":"0x3b9aca07"},"gasLimit":10000000}. Took 225 seconds
+starting _verifyAll
+Waiting 10s to make sure everything has propagated on etherscan
+Verifying {"address":"0x2B7cAcDCD736B48d840786A2dF7DaEB757f796a4","args":["test","test",10000,"0x4f2bD410B81Ea24F83D1E807511BAec204c4Cf7a"],"initialized":false,"name":"ERC20PresetFixedSupply"} at 0x2B7cAcDCD736B48d840786A2dF7DaEB757f796a4 
+Verifying {"address":"0xA308f4a980C4a2960e9E87fC51DBf2b0B50CA432","args":["0x2B7cAcDCD736B48d840786A2dF7DaEB757f796a4"],"initialized":false,"name":"FundDistributor"} at 0xA308f4a980C4a2960e9E87fC51DBf2b0B50CA432 
+Verifying {"address":"0xBdcCA321A51FD51cF3349E7BD1Ee5F0fe6CEe312","args":[["0x4f2bD410B81Ea24F83D1E807511BAec204c4Cf7a"],[100]],"initialized":false,"name":"PaymentSplitter"} at 0xBdcCA321A51FD51cF3349E7BD1Ee5F0fe6CEe312 
+Verifying {"address":"0x504BB82e9f373A18Bc78F426A9aB150003B35C1D","args":["0x2B7cAcDCD736B48d840786A2dF7DaEB757f796a4","0xA308f4a980C4a2960e9E87fC51DBf2b0B50CA432","0x4f2bD410B81Ea24F83D1E807511BAec204c4Cf7a"],"initialized":false,"name":"MasterChef"} at 0x504BB82e9f373A18Bc78F426A9aB150003B35C1D 
+Verifying {"address":"0xFb2f09C974858b7F302B7030ab38d049d6a86883","args":["testNft","tnft","0xBdcCA321A51FD51cF3349E7BD1Ee5F0fe6CEe312",100,100,1,1,1,[]],"initialized":false,"name":"MintableNFTSale"} at 0xFb2f09C974858b7F302B7030ab38d049d6a86883 
+Verified {"address":"0xBdcCA321A51FD51cF3349E7BD1Ee5F0fe6CEe312","args":[["0x4f2bD410B81Ea24F83D1E807511BAec204c4Cf7a"],[100]],"initialized":false,"name":"PaymentSplitter"} on network: rinkeby with constructor args 0x4f2bD410B81Ea24F83D1E807511BAec204c4Cf7a, 100
+
+
+Verified {"address":"0x2B7cAcDCD736B48d840786A2dF7DaEB757f796a4","args":["test","test",10000,"0x4f2bD410B81Ea24F83D1E807511BAec204c4Cf7a"],"initialized":false,"name":"ERC20PresetFixedSupply"} on network: rinkeby with constructor args test, test, 10000, 0x4f2bD410B81Ea24F83D1E807511BAec204c4Cf7a
+
+
+Verified {"address":"0x504BB82e9f373A18Bc78F426A9aB150003B35C1D","args":["0x2B7cAcDCD736B48d840786A2dF7DaEB757f796a4","0xA308f4a980C4a2960e9E87fC51DBf2b0B50CA432","0x4f2bD410B81Ea24F83D1E807511BAec204c4Cf7a"],"initialized":false,"name":"MasterChef"} on network: rinkeby with constructor args 0x2B7cAcDCD736B48d840786A2dF7DaEB757f796a4, 0xA308f4a980C4a2960e9E87fC51DBf2b0B50CA432, 0x4f2bD410B81Ea24F83D1E807511BAec204c4Cf7a
+
+
+Verified {"address":"0xA308f4a980C4a2960e9E87fC51DBf2b0B50CA432","args":["0x2B7cAcDCD736B48d840786A2dF7DaEB757f796a4"],"initialized":false,"name":"FundDistributor"} on network: rinkeby with constructor args 0x2B7cAcDCD736B48d840786A2dF7DaEB757f796a4
+
+
+Verified {"address":"0xFb2f09C974858b7F302B7030ab38d049d6a86883","args":["testNft","tnft","0xBdcCA321A51FD51cF3349E7BD1Ee5F0fe6CEe312",100,100,1,1,1,[]],"initialized":false,"name":"MintableNFTSale"} on network: rinkeby with constructor args testNft, tnft, 0xBdcCA321A51FD51cF3349E7BD1Ee5F0fe6CEe312, 100, 100, 1, 1, 1, 
+
+
+Waiting 2 s for Etherscan API limit of 5 calls/s
+Verifying {"address":"0x1742f8285D3f1C337B9c7d1485ED999032689A73","args":["veTst","vtst","0x2B7cAcDCD736B48d840786A2dF7DaEB757f796a4",1],"initialized":false,"name":"VoteEscrow"} at 0x1742f8285D3f1C337B9c7d1485ED999032689A73 
+Verifying {"address":"0xdD3FcC2fAAD6DfAC0426c3545CF335DD33D94A5B","args":[],"initialized":false,"name":"CloneFactory"} at 0xdD3FcC2fAAD6DfAC0426c3545CF335DD33D94A5B 
+Verifying {"address":"0x5e143Fc7C3d1c28A4eCFF237EecFCa0124f2AA55","args":[],"initialized":false,"name":"ERC20MerkleDistributorWithClawbackFactory"} at 0x5e143Fc7C3d1c28A4eCFF237EecFCa0124f2AA55 
+Verifying {"address":"0x3942B96B76C23268c27BaD803A1A51578B32BF18","args":[],"initialized":false,"name":"ERC20PresetFixedSupplyFactory"} at 0x3942B96B76C23268c27BaD803A1A51578B32BF18 
+Verifying {"address":"0x216A632b190C20E1a3AFf305563452d1F1624061","args":[],"initialized":false,"name":"ERC721MerkleDistributorFactory"} at 0x216A632b190C20E1a3AFf305563452d1F1624061 
+Verified {"address":"0x5e143Fc7C3d1c28A4eCFF237EecFCa0124f2AA55","args":[],"initialized":false,"name":"ERC20MerkleDistributorWithClawbackFactory"} on network: rinkeby with constructor args 
+
+
+Verified {"address":"0x3942B96B76C23268c27BaD803A1A51578B32BF18","args":[],"initialized":false,"name":"ERC20PresetFixedSupplyFactory"} on network: rinkeby with constructor args 
+
+
+Verified {"address":"0x216A632b190C20E1a3AFf305563452d1F1624061","args":[],"initialized":false,"name":"ERC721MerkleDistributorFactory"} on network: rinkeby with constructor args 
+
+
+Verified {"address":"0x1742f8285D3f1C337B9c7d1485ED999032689A73","args":["veTst","vtst","0x2B7cAcDCD736B48d840786A2dF7DaEB757f796a4",1],"initialized":false,"name":"VoteEscrow"} on network: rinkeby with constructor args veTst, vtst, 0x2B7cAcDCD736B48d840786A2dF7DaEB757f796a4, 1
+
+
+Verified {"address":"0xdD3FcC2fAAD6DfAC0426c3545CF335DD33D94A5B","args":[],"initialized":false,"name":"CloneFactory"} on network: rinkeby with constructor args 
+
+
+Waiting 2 s for Etherscan API limit of 5 calls/s
+Verifying {"address":"0x7e6421378623D490082f979a105C186E3ab64996","args":[],"initialized":false,"name":"FarmingFactory"} at 0x7e6421378623D490082f979a105C186E3ab64996 
+Verifying {"address":"0x09fE664C52513969E216982BD620273C2c345a87","args":[],"initialized":false,"name":"MintableNFTSaleFactory"} at 0x09fE664C52513969E216982BD620273C2c345a87 
+Verifying {"address":"0x71788674b3Ac611BA7Fa42E1B7D8443674B94eDa","args":[],"initialized":false,"name":"PaymentSplitterFactory"} at 0x71788674b3Ac611BA7Fa42E1B7D8443674B94eDa 
+Verifying {"address":"0xf4b34AD30F3810617B6f89aba21Cd33e0b9742fB","args":[],"initialized":false,"name":"VoteEscrowFactory"} at 0xf4b34AD30F3810617B6f89aba21Cd33e0b9742fB 
+Verified {"address":"0xf4b34AD30F3810617B6f89aba21Cd33e0b9742fB","args":[],"initialized":false,"name":"VoteEscrowFactory"} on network: rinkeby with constructor args 
+
+
+Verified {"address":"0x71788674b3Ac611BA7Fa42E1B7D8443674B94eDa","args":[],"initialized":false,"name":"PaymentSplitterFactory"} on network: rinkeby with constructor args 
+
+
+Verified {"address":"0x7e6421378623D490082f979a105C186E3ab64996","args":[],"initialized":false,"name":"FarmingFactory"} on network: rinkeby with constructor args 
+
+
+Verified {"address":"0x09fE664C52513969E216982BD620273C2c345a87","args":[],"initialized":false,"name":"MintableNFTSaleFactory"} on network: rinkeby with constructor args 
+
+
+Waiting 2 s for Etherscan API limit of 5 calls/s
+Verifications finished: 14 / 14 
+{"ERC20PresetFixedSupply":{"TITLE":"ERC20PresetFixedSupply","LOGO":"🏆🚀","ABI":"ERC20PresetFixedSupply","VAULT_TYPE":"experimental","ADDR":"0x2B7cAcDCD736B48d840786A2dF7DaEB757f796a4","CHAIN_ID":"4"},"FundDistributor":{"TITLE":"FundDistributor","LOGO":"🏆🚀","ABI":"FundDistributor","VAULT_TYPE":"experimental","ADDR":"0xA308f4a980C4a2960e9E87fC51DBf2b0B50CA432","CHAIN_ID":"4"},"PaymentSplitter":{"TITLE":"PaymentSplitter","LOGO":"🏆🚀","ABI":"PaymentSplitter","VAULT_TYPE":"experimental","ADDR":"0xBdcCA321A51FD51cF3349E7BD1Ee5F0fe6CEe312","CHAIN_ID":"4"},"MasterChef":{"TITLE":"MasterChef","LOGO":"🏆🚀","ABI":"MasterChef","VAULT_TYPE":"experimental","ADDR":"0x504BB82e9f373A18Bc78F426A9aB150003B35C1D","CHAIN_ID":"4"},"MintableNFTSale":{"TITLE":"MintableNFTSale","LOGO":"🏆🚀","ABI":"MintableNFTSale","VAULT_TYPE":"experimental","ADDR":"0xFb2f09C974858b7F302B7030ab38d049d6a86883","CHAIN_ID":"4"},"VoteEscrow":{"TITLE":"VoteEscrow","LOGO":"🏆🚀","ABI":"VoteEscrow","VAULT_TYPE":"experimental","ADDR":"0x1742f8285D3f1C337B9c7d1485ED999032689A73","CHAIN_ID":"4"},"CloneFactory":{"TITLE":"CloneFactory","LOGO":"🏆🚀","ABI":"CloneFactory","VAULT_TYPE":"experimental","ADDR":"0xdD3FcC2fAAD6DfAC0426c3545CF335DD33D94A5B","CHAIN_ID":"4"},"ERC20MerkleDistributorWithClawbackFactory":{"TITLE":"ERC20MerkleDistributorWithClawbackFactory","LOGO":"🏆🚀","ABI":"ERC20MerkleDistributorWithClawbackFactory","VAULT_TYPE":"experimental","ADDR":"0x5e143Fc7C3d1c28A4eCFF237EecFCa0124f2AA55","CHAIN_ID":"4"},"ERC20PresetFixedSupplyFactory":{"TITLE":"ERC20PresetFixedSupplyFactory","LOGO":"🏆🚀","ABI":"ERC20PresetFixedSupplyFactory","VAULT_TYPE":"experimental","ADDR":"0x3942B96B76C23268c27BaD803A1A51578B32BF18","CHAIN_ID":"4"},"ERC721MerkleDistributorFactory":{"TITLE":"ERC721MerkleDistributorFactory","LOGO":"🏆🚀","ABI":"ERC721MerkleDistributorFactory","VAULT_TYPE":"experimental","ADDR":"0x216A632b190C20E1a3AFf305563452d1F1624061","CHAIN_ID":"4"},"FarmingFactory":{"TITLE":"FarmingFactory","LOGO":"🏆🚀","ABI":"FarmingFactory","VAULT_TYPE":"experimental","ADDR":"0x7e6421378623D490082f979a105C186E3ab64996","CHAIN_ID":"4"},"MintableNFTSaleFactory":{"TITLE":"MintableNFTSaleFactory","LOGO":"🏆🚀","ABI":"MintableNFTSaleFactory","VAULT_TYPE":"experimental","ADDR":"0x09fE664C52513969E216982BD620273C2c345a87","CHAIN_ID":"4"},"PaymentSplitterFactory":{"TITLE":"PaymentSplitterFactory","LOGO":"🏆🚀","ABI":"PaymentSplitterFactory","VAULT_TYPE":"experimental","ADDR":"0x71788674b3Ac611BA7Fa42E1B7D8443674B94eDa","CHAIN_ID":"4"},"VoteEscrowFactory":{"TITLE":"VoteEscrowFactory","LOGO":"🏆🚀","ABI":"VoteEscrowFactory","VAULT_TYPE":"experimental","ADDR":"0xf4b34AD30F3810617B6f89aba21Cd33e0b9742fB","CHAIN_ID":"4"}}
