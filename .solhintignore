@@ -13,3 +13,4 @@ contracts/governance/VestingMerkleDistributor.sol
 
 contracts/governance/SimpleVesting.sol
 contracts/util/SingleTokenVestingNonRevocable.sol
+flat/*
