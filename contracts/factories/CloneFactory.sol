@@ -20,10 +20,9 @@ Copied from OZ
  *
  * _Available since v3.4._
  */
-contract Clones {
-    constructor() {
+contract CloneFactory {
+    constructor() {}
 
-    }
     /**
      * @dev Deploys and returns the address of a clone that mimics the behaviour of `implementation`.
      *
