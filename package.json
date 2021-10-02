@@ -23,8 +23,10 @@
     "solhint-plugin-prettier": "^0.0.5"
   },
   "dependencies": {
-    "@openzeppelin/contracts": "^4.3.1",
-    "@openzeppelin/contracts-upgradeable": "^4.3.1"
+    "@chimera-defi/merkle-distributor": "git+https://github.com/chimera-defi/merkle-distributor-generic.git",
+    "@openzeppelin/contracts": "4.3.1",
+    "@openzeppelin/contracts-upgradeable": "4.3.1",
+    "@openzeppelin/contracts3": "npm:@openzeppelin/contracts@^3.4.2"
   },
   "scripts": {
     "flattenAll": "mkdir flats && mkdir flats/contracts && npx hardhat flattenAll",
