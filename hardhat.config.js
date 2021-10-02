@@ -12,6 +12,13 @@ task("flattenAll", "Flatten all files we care about").setAction(async ({}, {run}
   let srcpath = "contracts";
   let files = fs.readdirSync(srcpath).map(file => `${srcpath}/${file}`);
 
+  srcpath = `${srcpath}/factories`;
+  files = files.concat(fs.readdirSync(srcpath).map(file => `${srcpath}/${file}`));
+
+  try {
+    fs.mkdirSync("flats/contracts/factories", {recursive: true});
+  } catch (e) {}
+
   await Promise.all(
     files.map(async file => {
       if (path.extname(file) == ".sol") {
