@@ -20,18 +20,18 @@
  - specify a price and change it later
  - create a limited supply collection, and add new items later
  - cheaper than rarible nft factory? 
- - 
+ - add royalties on opensea and rarible later when the collection is imported
  */
 // SPDX-License-Identifier: MIT
 pragma solidity 0.8.7;
 
-import "@openzeppelin/contracts-upgradeable/access/AccessControlEnumerableUpgradeable.sol";
-import "@openzeppelin/contracts-upgradeable/token/ERC721/extensions/ERC721EnumerableUpgradeable.sol";
+import "@openzeppelin/contracts/access/AccessControlEnumerable.sol";
+import "@openzeppelin/contracts/token/ERC721/extensions/ERC721Enumerable.sol";
 import "@openzeppelin/contracts/utils/Strings.sol";
 
 import "./utils/OwnershipRolesTemplate.sol";
 
-contract MintableNFTSale is ERC721EnumerableUpgradeable, OwnershipRolesTemplate {
+contract MintableNFTSale is ERC721Enumerable, OwnershipRolesTemplate {
     using Strings for uint256;
 
     event MintPaused(address account);
@@ -91,12 +91,8 @@ contract MintableNFTSale is ERC721EnumerableUpgradeable, OwnershipRolesTemplate 
         uint256 _premint,
         uint256 _freemint,
         address[] memory admins
-    ) {
+    ) ERC721(_name, _symbol) OwnershipRolesTemplate() {
         paymentsSplitter = _paymentsSplitter;
-        __OwnershipRolesTemplate_init();
-        __ERC721Enumerable_init_unchained();
-        __ERC721_init(_name, _symbol);
-        // _setupRole(DEFAULT_ADMIN_ROLE, msg.sender);
         PRICE = _price;
         MAX_SUPPLY = _maxSupply;
         MAX_PER_MINT = _maxPerMint;
@@ -226,7 +222,7 @@ contract MintableNFTSale is ERC721EnumerableUpgradeable, OwnershipRolesTemplate 
     function supportsInterface(bytes4 interfaceId)
         public
         view
-        override(ERC721EnumerableUpgradeable, AccessControlEnumerableUpgradeable)
+        override(ERC721Enumerable, AccessControlEnumerable)
         returns (bool)
     {
         return super.supportsInterface(interfaceId);

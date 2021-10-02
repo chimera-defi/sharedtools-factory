@@ -24,9 +24,7 @@ contract FarmingFactory {
     }
 
     function createFundDistributor(address _reward) public returns (address fd) {
-        // function initialize(address _reward) external initializer {
-        fd = address(new FundDistributor());
-        IFundDistributor(fd).initialize(_reward);
+        fd = address(new FundDistributor(_reward));
         emit FundDistributorCreated(fd, _reward);
         return fd;
     }
