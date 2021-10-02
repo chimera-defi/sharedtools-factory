@@ -1,16 +1,19 @@
-const fs = require('fs');
+const fs = require("fs");
 
-path = "node_modules/@chimera-defi/merkle-distributor/contracts/ERC721MerkleDistributor.sol";
-f = fs.readFileSync(path, 'utf8');
-contract_name = f.match(/contract\s(\w+)/gi)[0].split(' ')[1];
+path = "node_modules/@chimera-defi/merkle-distributor/contracts/ERC20MerkleDistributorWithClawback.sol";
+f = fs.readFileSync(path, "utf8");
+contract_name = f.match(/contract\s(\w+)/gi)[0].split(" ")[1];
 
-f2 = f.split('\n').join(' ')
-cargs = f2.match(/constructor\(\s*(.*?)\s*\)/gi)
-cargs = cargs[0].replace('constructor(', '').replace(')', '').split(',').map( s => s.trim())
+f2 = f.split("\n").join(" ");
+cargs = f2.match(/constructor\(\s*(.*?)\s*\)/gi);
+cargs = cargs[0]
+  .replace("constructor(", "")
+  .replace(")", "")
+  .split(",")
+  .map(s => s.trim());
 
-args = cargs.map(s => s.split(' ').pop()).join(', ');
-argsWithType = cargs.join(', ')
-
+args = cargs.map(s => s.split(" ").pop()).join(", ");
+argsWithType = cargs.join(", ");
 
 res = `
 // SPDX-License-Identifier: UNLICENSED
@@ -35,6 +38,6 @@ contract ${contract_name}Factory {
     return res;
   }
 }
-`
+`;
 
 console.log(res);
