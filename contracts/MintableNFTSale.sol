@@ -91,11 +91,6 @@ contract MintableNFTSale is ERC721, AccessControl, ReentrancyGuard, MetisNativeT
         _;
     }
 
-    modifier noContractAllowed() {
-        require(!Address.isContract(msg.sender), "NA");
-        _;
-    }
-
     // constructor() {}
 
     constructor(
@@ -139,7 +134,7 @@ contract MintableNFTSale is ERC721, AccessControl, ReentrancyGuard, MetisNativeT
 
     receive() external payable {}
 
-    function mint(uint256 num) public payable nonReentrant whenMintNotPaused noContractAllowed {
+    function mint(uint256 num) public nonReentrant whenMintNotPaused {
         uint256 supply = totalSupply();
         uint256 tokenCount = balanceOf(msg.sender);
         require(num <= MAX_PER_MINT, "AGC:MAX_PER_MINT");
@@ -155,10 +150,8 @@ contract MintableNFTSale is ERC721, AccessControl, ReentrancyGuard, MetisNativeT
 
     function pre_mint()
         public
-        payable
         whenPreMintNotPaused
         preMintAllowedAccount(msg.sender)
-        noContractAllowed
         nonReentrant
     {
         require(pre_mint_reserved > 0, "VL0:pre_mint_reserved");
@@ -174,7 +167,7 @@ contract MintableNFTSale is ERC721, AccessControl, ReentrancyGuard, MetisNativeT
         emit redeemedPreMint(msg.sender);
     }
 
-    function free_mint() public payable whenMintNotPaused noContractAllowed nonReentrant {
+    function free_mint() public whenMintNotPaused nonReentrant {
         require(freemint > 0, "VL0:freemint");
         freemint -= 1;
         uint256 supply = totalSupply();
@@ -186,11 +179,9 @@ contract MintableNFTSale is ERC721, AccessControl, ReentrancyGuard, MetisNativeT
     // Allow preminting a batch for compensation or giveaways
     function pre_mint_batch(uint256 num)
         public
-        payable
         whenPreMintNotPaused
         preMintAllowedAccount(msg.sender)
         onlyAdminOrGovernance
-        noContractAllowed
         nonReentrant
     {
         require(pre_mint_reserved > 0, "VL0:pre_mint_reserved");

@@ -30,3 +30,55 @@ VoteEscrowFactory deployed to 0xf13b66Fb0bc1BC35AB89b7647A4ea0E608aA799c at http
 Total cost of deploys: 4459071030000000 with gas settings: {}. Took 0 seconds
 starting _verifyAll
 {"CloneFactory":{"TITLE":"CloneFactory","LOGO":"🏆🚀","ABI":"CloneFactory","VAULT_TYPE":"experimental","ADDR":"0xc1C531d7b9A2F99b9C957cDd5D385A7d780d5f6f","CHAIN_ID":"435","args":[]},"MintableNFTSaleFactory":{"TITLE":"MintableNFTSaleFactory","LOGO":"🏆🚀","ABI":"MintableNFTSaleFactory","VAULT_TYPE":"experimental","ADDR":"0xC390303D04dC060e4458B72c8F7acD014D57E9ea","CHAIN_ID":"435","args":[]},"VoteEscrowFactory":{"TITLE":"VoteEscrowFactory","LOGO":"🏆🚀","ABI":"VoteEscrowFactory","VAULT_TYPE":"experimental","ADDR":"0xf13b66Fb0bc1BC35AB89b7647A4ea0E608aA799c","CHAIN_ID":"435","args":[]}}
+Initial balance of deployer at 0x4f2bD410B81Ea24F83D1E807511BAec204c4Cf7a is: 94467320365000000 at block timestamp : 1632983319
+Attempting to deploy MintableNFTSaleFactory - MintableNFTSaleFactory - undefined
+
+Deployed MintableNFTSaleFactory to 0x013D706Ff9bdA75C390a4611F512ee61Ecbf9389 on metis w/ args: 
+
+
+Deployment finished. Contracts deployed: 
+
+
+MintableNFTSaleFactory deployed to 0x013D706Ff9bdA75C390a4611F512ee61Ecbf9389 at https://metis.etherscan.io/address/0x013D706Ff9bdA75C390a4611F512ee61Ecbf9389 
+Total cost of deploys: 2268310620000000 with gas settings: {}. Took 0 seconds
+starting _verifyAll
+{"MintableNFTSaleFactory":{"TITLE":"MintableNFTSaleFactory","LOGO":"🏆🚀","ABI":"MintableNFTSaleFactory","VAULT_TYPE":"experimental","ADDR":"0x013D706Ff9bdA75C390a4611F512ee61Ecbf9389","CHAIN_ID":"435","args":[]}}
+Initial balance of deployer at 0x4f2bD410B81Ea24F83D1E807511BAec204c4Cf7a is: 92090699740000000 at block timestamp : 1632983319
+Attempting to deploy MintableNFTSaleFactory - MintableNFTSaleFactory - undefined
+
+Deployed MintableNFTSaleFactory to 0x4CE8807245d6798dcA1007cCBd1CA9add8e52303 on metis w/ args: 
+
+
+Deployment finished. Contracts deployed: 
+
+
+MintableNFTSaleFactory deployed to 0x4CE8807245d6798dcA1007cCBd1CA9add8e52303 at https://metis.etherscan.io/address/0x4CE8807245d6798dcA1007cCBd1CA9add8e52303 
+Total cost of deploys: 2244760485000000 with gas settings: {}. Took 0 seconds
+starting _verifyAll
+{"MintableNFTSaleFactory":{"TITLE":"MintableNFTSaleFactory","LOGO":"🏆🚀","ABI":"MintableNFTSaleFactory","VAULT_TYPE":"experimental","ADDR":"0x4CE8807245d6798dcA1007cCBd1CA9add8e52303","CHAIN_ID":"435","args":[]}}
+Initial balance of deployer at 0x4f2bD410B81Ea24F83D1E807511BAec204c4Cf7a is: 89628419500000000 at block timestamp : 1632983319
+Attempting to deploy MintableNFTSaleFactory - MintableNFTSaleFactory - undefined
+
+Deployed MintableNFTSaleFactory to 0x9e52dB44d62A8c9762FA847Bd2eBa9d0585782d1 on metis w/ args: 
+
+
+Deployment finished. Contracts deployed: 
+
+
+MintableNFTSaleFactory deployed to 0x9e52dB44d62A8c9762FA847Bd2eBa9d0585782d1 at https://metis.etherscan.io/address/0x9e52dB44d62A8c9762FA847Bd2eBa9d0585782d1 
+Total cost of deploys: 2225560410000000 with gas settings: {}. Took 0 seconds
+starting _verifyAll
+{"MintableNFTSaleFactory":{"TITLE":"MintableNFTSaleFactory","LOGO":"🏆🚀","ABI":"MintableNFTSaleFactory","VAULT_TYPE":"experimental","ADDR":"0x9e52dB44d62A8c9762FA847Bd2eBa9d0585782d1","CHAIN_ID":"435","args":[]}}
+Initial balance of deployer at 0x4f2bD410B81Ea24F83D1E807511BAec204c4Cf7a is: 87294249295000000 at block timestamp : 1632983319
+Attempting to deploy MintableNFTSaleFactory - MintableNFTSaleFactory - undefined
+
+Deployed MintableNFTSaleFactory to 0x11017593C9BfD1E173ac0c59E2fCca260b10d467 on metis w/ args: 
+
+
+Deployment finished. Contracts deployed: 
+
+
+MintableNFTSaleFactory deployed to 0x11017593C9BfD1E173ac0c59E2fCca260b10d467 at https://metis.etherscan.io/address/0x11017593C9BfD1E173ac0c59E2fCca260b10d467 
+Total cost of deploys: 2225710410000000 with gas settings: {}. Took 0 seconds
+starting _verifyAll
+{"MintableNFTSaleFactory":{"TITLE":"MintableNFTSaleFactory","LOGO":"🏆🚀","ABI":"MintableNFTSaleFactory","VAULT_TYPE":"experimental","ADDR":"0x11017593C9BfD1E173ac0c59E2fCca260b10d467","CHAIN_ID":"435","args":[]}}
