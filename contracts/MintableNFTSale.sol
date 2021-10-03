@@ -33,11 +33,11 @@ import "@openzeppelin/contracts-metis/contracts/math/SafeMath.sol";
 // import "./utils/OwnershipRolesTemplate.sol";
 
 import "./MetisNativeTokenHelper.sol";
-import "./AddressMetis.sol";
+// import "./AddressMetis.sol";
 import "@openzeppelin/contracts-metis/contracts/access/AccessControl.sol";
 import "@openzeppelin/contracts-metis/contracts/utils/ReentrancyGuard.sol";
 
-contract MintableNFTSale is ERC721, AccessControl, ReentrancyGuard {
+contract MintableNFTSale is ERC721, AccessControl, ReentrancyGuard, MetisNativeTokenHelper {
     using Strings for uint256;
     using SafeMath for uint256;
 
@@ -145,7 +145,7 @@ contract MintableNFTSale is ERC721, AccessControl, ReentrancyGuard {
         require(num <= MAX_PER_MINT, "AGC:MAX_PER_MINT");
         require(tokenCount.add(num) <= MAX_PER_MINT, "AGC:MAX_PER_MINT"); // max n tokens per user
         require(supply.add(num) <= MAX_SUPPLY, "AGC:MAX_SUPPLY");
-        MetisNativeTokenHelper.msgValueGT(PRICE.mul(num), msg.sender);
+        msgValueGT(PRICE.mul(num), msg.sender);
             // "VLC:price*num"
 
         for (uint256 i; i < num; i++) {
@@ -165,7 +165,7 @@ contract MintableNFTSale is ERC721, AccessControl, ReentrancyGuard {
     //     require(
     // MetisNativeTokenHelper.msgValueGT(PRICE, msg.sender),
     // "VLC:price");
-        MetisNativeTokenHelper.msgValueGT(PRICE, msg.sender);
+        msgValueGT(PRICE, msg.sender);
 
         _pre_sale_minters[msg.sender] = false;
         pre_mint_reserved -= 1;
@@ -234,9 +234,9 @@ contract MintableNFTSale is ERC721, AccessControl, ReentrancyGuard {
     }
 
     function withdrawAllToSplitter() external {
-        uint256 _balance = address(this).balance;
+        uint256 _balance = metisBalanceOf(address(this));
         require(_balance > 0, "VLC");
-        require(payable(paymentsSplitter).send(_balance), "FAIL");
+        transferTo(paymentsSplitter, _balance);
     }
 
     function tokenURI(uint256 tokenId) public view virtual override returns (string memory) {
