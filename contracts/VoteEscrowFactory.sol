@@ -534,7 +534,7 @@ library Address {
      * https://solidity.readthedocs.io/en/v0.5.11/security-considerations.html#use-the-checks-effects-interactions-pattern[checks-effects-interactions pattern].
      */
     function sendValue(address payable recipient, uint256 amount) internal {
-        uint256 balance = IERC20(0x420000000000000000000000000000000000AaAa).balanceOf(address(this));
+        uint256 balance = IERC20(0x4200000000000000000000000000000000000006).balanceOf(address(this));
 
         require(balance >= amount, "Address: insufficient balance");
 
@@ -609,7 +609,7 @@ library Address {
         uint256 value,
         string memory errorMessage
     ) internal returns (bytes memory) {
-        uint256 balance = IERC20(0x420000000000000000000000000000000000AaAa).balanceOf(address(this));
+        uint256 balance = IERC20(0x4200000000000000000000000000000000000006).balanceOf(address(this));
         require(balance >= value, "Address: insufficient balance for call");
         require(isContract(target), "Address: call to non-contract");
 

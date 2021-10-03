@@ -20,7 +20,7 @@ Copied from OZ
  *
  * _Available since v3.4._
  */
-contract Clones {
+contract CloneFactory {
     constructor() {
 
     }

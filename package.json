@@ -24,8 +24,10 @@
     "solhint-plugin-prettier": "^0.0.5"
   },
   "dependencies": {
+    "@chimera-defi/merkle-distributor": "git+https://github.com/chimera-defi/merkle-distributor-generic.git",
     "@eth-optimism/hardhat-ovm": "^0.2.3",
-    "@openzeppelin/contracts": "^3.0.0",
+    "@openzeppelin/contracts-metis": "git://github.com/chimera-defi/openzeppelin-contracts#chimera-defi-metis",
+    "@openzeppelin/contracts3": "npm:@openzeppelin/contracts@^3.4.2",
     "@openzeppelin/contracts-upgradeable": "^4.3.1"
   },
   "scripts": {
