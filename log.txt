@@ -1,0 +1,32 @@
+Initial balance of deployer at 0x4f2bD410B81Ea24F83D1E807511BAec204c4Cf7a is: 0 at block timestamp : 1632983319
+Attempting to deploy CloneFactory - CloneFactory - undefined
+Initial balance of deployer at 0x4f2bD410B81Ea24F83D1E807511BAec204c4Cf7a is: 0 at block timestamp : 1632983319
+Attempting to deploy CloneFactory - CloneFactory - undefined
+Initial balance of deployer at 0x4f2bD410B81Ea24F83D1E807511BAec204c4Cf7a is: 0 at block timestamp : 1632983319
+Attempting to deploy CloneFactory - CloneFactory - undefined
+Initial balance of deployer at 0x4f2bD410B81Ea24F83D1E807511BAec204c4Cf7a is: 100000000000000000 at block timestamp : 1632983319
+Attempting to deploy CloneFactory - CloneFactory - undefined
+
+Deployed CloneFactory to 0xA393088d6172845e4F4003E3FD958a9F174420B0 on metis w/ args: 
+Attempting to deploy MintableNFTSaleFactory - MintableNFTSaleFactory - undefined
+Initial balance of deployer at 0x4f2bD410B81Ea24F83D1E807511BAec204c4Cf7a is: 99817449025000000 at block timestamp : 1632983319
+Attempting to deploy CloneFactory - CloneFactory - undefined
+
+Deployed CloneFactory to 0xc1C531d7b9A2F99b9C957cDd5D385A7d780d5f6f on metis w/ args: 
+Attempting to deploy MintableNFTSaleFactory - MintableNFTSaleFactory - undefined
+
+Deployed MintableNFTSaleFactory to 0xC390303D04dC060e4458B72c8F7acD014D57E9ea on metis w/ args: 
+Attempting to deploy VoteEscrowFactory - VoteEscrowFactory - undefined
+
+Deployed VoteEscrowFactory to 0xf13b66Fb0bc1BC35AB89b7647A4ea0E608aA799c on metis w/ args: 
+
+
+Deployment finished. Contracts deployed: 
+
+
+CloneFactory deployed to 0xc1C531d7b9A2F99b9C957cDd5D385A7d780d5f6f at https://metis.etherscan.io/address/0xc1C531d7b9A2F99b9C957cDd5D385A7d780d5f6f 
+MintableNFTSaleFactory deployed to 0xC390303D04dC060e4458B72c8F7acD014D57E9ea at https://metis.etherscan.io/address/0xC390303D04dC060e4458B72c8F7acD014D57E9ea 
+VoteEscrowFactory deployed to 0xf13b66Fb0bc1BC35AB89b7647A4ea0E608aA799c at https://metis.etherscan.io/address/0xf13b66Fb0bc1BC35AB89b7647A4ea0E608aA799c 
+Total cost of deploys: 4459071030000000 with gas settings: {}. Took 0 seconds
+starting _verifyAll
+{"CloneFactory":{"TITLE":"CloneFactory","LOGO":"🏆🚀","ABI":"CloneFactory","VAULT_TYPE":"experimental","ADDR":"0xc1C531d7b9A2F99b9C957cDd5D385A7d780d5f6f","CHAIN_ID":"435","args":[]},"MintableNFTSaleFactory":{"TITLE":"MintableNFTSaleFactory","LOGO":"🏆🚀","ABI":"MintableNFTSaleFactory","VAULT_TYPE":"experimental","ADDR":"0xC390303D04dC060e4458B72c8F7acD014D57E9ea","CHAIN_ID":"435","args":[]},"VoteEscrowFactory":{"TITLE":"VoteEscrowFactory","LOGO":"🏆🚀","ABI":"VoteEscrowFactory","VAULT_TYPE":"experimental","ADDR":"0xf13b66Fb0bc1BC35AB89b7647A4ea0E608aA799c","CHAIN_ID":"435","args":[]}}

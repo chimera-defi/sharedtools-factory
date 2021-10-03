@@ -1,6 +1,7 @@
 # SharedTools
 https://medium.com/@chimera_defi/sharedtools-c2fe8e49ba9b
 
+
 # Metis notes
 
 Farming contracts rely on solidity 0.8.0+ for overflow checking and are not safe for production use.  
@@ -8,6 +9,22 @@ Farming contracts rely on solidity 0.8.0+ for overflow checking and are not safe
 VoteEscrowFactory was succesfully deployed. 
 Had to tweak it a good amount to deal with no native ETH token errors from OVM, and going over the contract limit.  
 Also had to remove any contracts that wouldnt compile. Wonder if there's a OVM variant of OZ.  
+
+Created an OZ fork for metis 
+https://github.com/chimera-defi/openzeppelin-contracts/pull/1
+
+```
+npm i --save @openzeppelin/contracts-metis@git+https://github.com/chimera-defi/openzeppelin-contracts#chimera-defi-metis
+
+or add 
+    "@openzeppelin/contracts-metis": "git://github.com/chimera-defi/openzeppelin-contracts#chimera-defi-metis",
+
+to package.json and install
+
+import as so:
+import "@openzeppelin/contracts-metis/contracts/token/ERC20/IERC20.sol";
+
+```
 # Template base
 
 Factory contracts for SharedTools. 
