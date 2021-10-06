@@ -123,20 +123,6 @@ contract MintableNFTSale_flashloan is MintableNFTSaleERC20 {
         }
       }
 
-      function withdrawAllToSplitter() external virtual override {
-        for (uint256 i; i<validAssets.length; i++) {
-          address asset = validAssets[i];
-          uint256 bal = IERC20(asset).balanceOf(address(this));
-          if (bal > 0) {
-            IERC20(asset).transfer(paymentsSplitter, bal);
-          }
-        }
-        uint256 _balance = address(this).balance;
-        if(_balance > 0) {
-          require(payable(paymentsSplitter).send(_balance), "FAIL");
-        }
-      }
-
       function _uint2str(uint _i) internal pure returns (string memory _uintAsString) {
         if (_i == 0) {
             return "0";
