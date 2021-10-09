@@ -1,7 +1,8 @@
 const hre = require("hardhat");
 const fs = require("fs");
-const got = require("got");
+const hhf = require("@chimera-defi/hardhat-framework");
 const {ethers} = hre;
+const got = require("got");
 
 const log = txt => {
   txt = txt + "\n";
@@ -11,17 +12,20 @@ const log = txt => {
 
 const ethLaunchNetworks = ["rinkeby", "goerli", "mainnet", "ropsten"];
 
-const isMainnet = launchNetwork => {
-  // some behaviours need to be tested with a mainnet fork which behaves the same as mainnet
-  return launchNetwork == "localhost" || launchNetwork == "mainnet";
-};
-
-// const getExplorer = launchNetwork => {
-//   let cid = await hre.getChainId();
-//   // todo
-// }
-
 const getGwei = num => ethers.utils.parseUnits(`${num}`, "gwei");
+
+// some behaviours need to be tested with a mainnet fork which behaves the same as mainnet
+const isMainnet = launchNetwork => launchNetwork == "localhost" || launchNetwork == "mainnet";
+
+const isEthereum = launchNetwork => ethLaunchNetworks.indexOf(launchNetwork) != -1;
+
+const isMatic = launchNetwork => launchNetwork == "mumbai" || launchNetwork == "matic";
+
+const getExplorer = async () => {
+  let cid = await hre.getChainId();
+  let explorer = hhf.explorer(cid);
+  return explorer;
+};
 
 const getGasPrice = async confidenceMin => {
   let url = "https://api.blocknative.com/gasprices/blockprices";
@@ -43,9 +47,35 @@ const getMediumGas = async () => {
   return await getGasPrice(80);
 };
 
+const getGasViaZapper = async (network = "polygon", type = "instant") => {
+  let reqUrl = `https://api.zapper.fi/v1/gas-price?api_key=96e0cc51-a62e-42ca-acee-910ea7d2a241&network=${network}`;
+
+  let res = await got(reqUrl, {json: true});
+  return res.body[type];
+};
+
+const getGasViaPolygonscan = async () => {
+  let apikey = process.env.POLYGONSCAN_API;
+  let reqUrl = `https://api.polygonscan.com/api?module=gastracker&action=gasoracle&apikey=${apikey}`;
+
+  let res = await got(reqUrl, {json: true});
+  // return res.body.result['ProposeGasPrice'];
+  return res.body.result["FastGasPrice"];
+};
+
 const _getOverrides = async (launchNetwork = false) => {
-  if (launchNetwork && ethLaunchNetworks.indexOf(launchNetwork) == -1) return {};
-  // https://www.blocknative.com/gas-estimator
+  let netConfig = hre.config.networks[launchNetwork];
+
+  if (launchNetwork && !isEthereum(launchNetwork)) {
+    let netConfig = hre.config.networks[launchNetwork];
+    if (typeof netConfig.gasPrice == "number") return {gasPrice: netConfig.gasPrice};
+    if (isMatic(launchNetwork)) {
+      let gp = await getGasViaPolygonscan();
+      if (gp < 100) gp = 100;
+      return {gasPrice: getGwei(gp)};
+    }
+    return {};
+  }
   const overridesForEIP1559 = {
     type: 2,
     maxFeePerGas: getGwei(10),
@@ -62,6 +92,7 @@ const _getOverrides = async (launchNetwork = false) => {
   }
   if (overridesForEIP1559.maxFeePerGas.lt(overridesForEIP1559.maxPriorityFeePerGas))
     overridesForEIP1559.maxPriorityFeePerGas = overridesForEIP1559.maxFeePerGas.sub(1);
+
   return overridesForEIP1559;
 };
 
@@ -88,11 +119,15 @@ const _verify = async (contract, launchNetwork, cArgs) => {
 };
 
 const _deployContract = async (name, launchNetwork = false, cArgs = []) => {
+  if (typeof cArgs !== "undefined" && (!Array.isArray(cArgs) && Object.keys(cArgs).length > 0)) cArgs = [cArgs];
+  log(`Attempting to deploy ${name} - ${cArgs?.length ? cArgs.join(",") : cArgs}`);
+
   const overridesForEIP1559 = await _getOverrides(launchNetwork);
   const factory = await hre.ethers.getContractFactory(name);
   const contract = await factory.deploy(...cArgs, overridesForEIP1559);
   await contract.deployTransaction.wait(1);
   await contract.deployed();
+
   log(`\nDeployed ${name} to ${contract.address} on ${launchNetwork} w/ args: ${cArgs.join(",")}`);
   return Promise.resolve({contract: contract, args: cArgs, initialized: false, srcName: name});
 };
@@ -106,7 +141,11 @@ function chunkArray(array, size) {
 
 const _verifyAll = async (allContracts, launchNetwork) => {
   log("starting _verifyAll");
-  if (!launchNetwork || ethLaunchNetworks.indexOf(launchNetwork) == -1) return;
+  if (!launchNetwork || (!isEthereum(launchNetwork) && !isMatic(launchNetwork))) return;
+  if (isMatic(launchNetwork)) {
+    // hot swap the etherscan api key
+    hre.config.etherscan.apiKey = process.env.POLYGONSCAN_API;
+  }
   log("Waiting 10s to make sure everything has propagated on etherscan");
   await new Promise(resolve => setTimeout(resolve, 20000));
   // wait 10s to make sure everything has propagated on etherscan
@@ -163,17 +202,26 @@ const _getAddress = obj => {
     : obj.contract.address;
 };
 
-const _postRun = (contracts, launchNetwork) => {
+const _postRun = async (contracts, launchNetwork) => {
   log("\n\nDeployment finished. Contracts deployed: \n\n");
   let prefix = "https://";
-  if (!isMainnet(launchNetwork)) {
-    prefix += `${launchNetwork}.`;
+  let explorer = await getExplorer();
+  if (explorer) {
+    prefix = explorer;
+    prefix += "/address/";
+  } else {
+    if (isEthereum(launchNetwork)) {
+      if (!isMainnet(launchNetwork)) {
+        prefix += `${launchNetwork}.`;
+      }
+      prefix += "etherscan.io/address/";
+    }
   }
-  prefix += "etherscan.io/address/";
 
   Object.keys(contracts).map(k => {
-    let url = prefix + contracts[k].contract.address;
-    log(`${k} deployed to ${contracts[k].contract.address} at ${url} `);
+    let address = contracts[k].contract.address;
+    let url = prefix + address;
+    log(`${k} deployed to ${address} at ${url} `);
   });
   fs.writeFileSync("deploy_log.json", JSON.stringify(contracts), {flag: "a"});
 };
@@ -192,7 +240,6 @@ const _transferOwnership = async (name, contract, to) => {
 
 const _transact = async (tx, ...args) => {
   if (!overrides) overrides = await _getOverrides();
-  console.log(overrides, args.length, [...args].length);
   let trace = await tx(...args, overrides);
   await trace.wait(); // throws on tx failure
   return trace;
@@ -220,7 +267,7 @@ async function loadContract(name, address, signer) {
   return new ethers.Contract(address, abi, signer);
 }
 
-async function generateJSONListForUI(contracts) {
+async function generateJSONListForAutoUI(contracts) {
   let res = {};
   let cid = await hre.getChainId();
   Object.keys(contracts).forEach(name => {
@@ -246,6 +293,7 @@ class DeployHelper {
     this.multisig_address = multisig_address;
     this.signer = null;
   }
+
   async init() {
     let account = hre.config.networks[this.launchNetwork].accounts;
     let privkey = hre.config.networks[this.launchNetwork].accounts[0];
@@ -265,20 +313,23 @@ class DeployHelper {
       }`,
     );
   }
-  async deployContract(name, ctrctName, args) {
-    if (typeof args !== "undefined" && (typeof args !== "object" || !args.length)) args = [args];
-    log(`Attempting to deploy ${name} - ${ctrctName} - ${args?.length ? args.join(',') : args}`)
+
+  async deployContract(name, ctrctName, args = []) {
     this.contracts[name] = await _deployContract(ctrctName, this.launchNetwork, args);
   }
+
   async deployInitializableContract(name, ctrctName, args) {
     this.contracts[name] = await _deployInitializableContract(ctrctName, this.launchNetwork, args);
   }
+
   addressOf(name) {
     return _getAddress(this.contracts[name]);
   }
+
   async getOverrides() {
     return await _getOverrides(this.launchNetwork);
   }
+
   async transact(tx, ...args) {
     let overrides = await this.getOverrides();
     log(`transact ${tx} ${overrides}, ${args.length}, ${[...args].length}`);
@@ -286,6 +337,7 @@ class DeployHelper {
     await trace.wait(); // throws on tx failure
     return trace;
   }
+
   async addContract(name, contractName, address, args) {
     this.contracts[name] = {
       contract: await loadContract(contractName, address, this.signer),
@@ -298,6 +350,7 @@ class DeployHelper {
       this.contracts[name].args = [];
     }
   }
+
   _log(msg) {
     log(msg);
   }
@@ -306,9 +359,11 @@ class DeployHelper {
   addDist(name, amount) {
     this.distribution[name] = amount;
   }
+
   getContract(name) {
     return _getContract(this.contracts, name);
   }
+
   async _checkEnoughTokensToDistribute(token) {
     let total = Object.values(this.distribution).reduce((a, b) => a.add(b));
     let diff = (await this.getContract(token).balanceOf(this.address)).sub(total);
@@ -319,11 +374,13 @@ class DeployHelper {
       }
     }
   }
+
   async sendTokens(contract, name, to, amount) {
     let res = await this.transact(contract.transfer, to, amount);
     log(`Tokens transferred: From ${contract.address} to ${name} at ${to} : ${amount}`);
     return res;
   }
+
   async distribute(token) {
     await this._checkEnoughTokensToDistribute(token);
     for (let name in this.distribution) {
@@ -335,7 +392,6 @@ class DeployHelper {
   async transferOwnershipToMultisig(name) {
     let to = this.multisig_address;
     let contract = this.getContract(name);
-
     let res = await this.transact(contract.transferOwnership, to);
     log(`Ownership transferred for ${name} at ${contract.address} to ${to}`);
     return res;
@@ -345,23 +401,23 @@ class DeployHelper {
       await this.transferOwnershipToMultisig(name);
     }
   }
+
   async verify() {
     await _verifyAll(this.contracts, this.launchNetwork);
   }
 
   async postRun() {
-    _postRun(this.contracts, this.launchNetwork);
+    await _postRun(this.contracts, this.launchNetwork);
     let finalBalance = await hre.ethers.provider.getBalance(this.address);
     let finalBlockTime = (await hre.ethers.provider.getBlock()).timestamp;
     let overrides = await this.getOverrides(this.launchNetwork);
-
     log(
       `Total cost of deploys: ${this.initialBalance.sub(finalBalance).toString()} with gas settings: ${JSON.stringify(
         overrides,
       )}. Took ${finalBlockTime - this.currentBlockTime} seconds`,
     );
     await this.verify();
-    log(JSON.stringify(await generateJSONListForUI(this.contracts)));
+    log(JSON.stringify(await generateJSONListForAutoUI(this.contracts)));
   }
 }
 
