@@ -116,7 +116,7 @@ contract MintableNFTSale is ERC721Enumerable, OwnershipRolesTemplate {
 
     receive() external payable {}
 
-    function mint(uint256 num) public virtual payable nonReentrant whenMintNotPaused noContractAllowed {
+    function mint(uint256 num) public payable virtual nonReentrant whenMintNotPaused noContractAllowed {
         uint256 supply = totalSupply();
         uint256 tokenCount = balanceOf(msg.sender);
         require(num <= MAX_PER_MINT, "AGC:MAX_PER_MINT");
@@ -131,8 +131,8 @@ contract MintableNFTSale is ERC721Enumerable, OwnershipRolesTemplate {
 
     function pre_mint()
         public
-        virtual
         payable
+        virtual
         whenPreMintNotPaused
         preMintAllowedAccount(msg.sender)
         noContractAllowed
@@ -147,7 +147,7 @@ contract MintableNFTSale is ERC721Enumerable, OwnershipRolesTemplate {
         emit redeemedPreMint(msg.sender);
     }
 
-    function free_mint() public virtual payable whenMintNotPaused noContractAllowed nonReentrant {
+    function free_mint() public payable virtual whenMintNotPaused noContractAllowed nonReentrant {
         require(freemint > 0, "VL0:freemint");
         freemint -= 1;
         uint256 supply = totalSupply();
