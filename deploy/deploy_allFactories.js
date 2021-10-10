@@ -34,6 +34,7 @@ async function main() {
 
   for (const file of files) {
     let name = file.split(".")[0];
+    if (name == "StableSwapFactory") continue;
     await dh.deployContract(name, name);
   }
   await dh.postRun();

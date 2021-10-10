@@ -104,7 +104,6 @@ const _verifyBase = async (contract, launchNetwork, cArgs = []) => {
       network: launchNetwork,
     });
     log(`Verified ${JSON.stringify(contract)} on network: ${launchNetwork} with constructor args ${cArgs.join(", ")}`);
-    log("\n");
     return true;
   } catch (e) {
     log(`Etherscan verification failed w/ ${e} | Args: ${cArgs} | on ${launchNetwork} for ${contract.address}`);
@@ -128,7 +127,7 @@ const _deployContract = async (name, launchNetwork = false, cArgs = []) => {
   await contract.deployTransaction.wait(1);
   await contract.deployed();
 
-  log(`\nDeployed ${name} to ${contract.address} on ${launchNetwork} w/ args: ${cArgs.join(",")}`);
+  log(`Deployed ${name} to ${contract.address} on ${launchNetwork} w/ args: ${cArgs.join(",")}`);
   return Promise.resolve({contract: contract, args: cArgs, initialized: false, srcName: name});
 };
 
