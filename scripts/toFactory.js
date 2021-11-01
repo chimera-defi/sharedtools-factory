@@ -1,6 +1,8 @@
 const fs = require("fs");
 
-path = "node_modules/@chimera-defi/merkle-distributor/contracts/ERC20MerkleDistributorWithClawback.sol";
+// Change this to what you need
+path = "contracts/FrankiesTWAMM.sol";
+
 f = fs.readFileSync(path, "utf8");
 contract_name = f.match(/contract\s(\w+)/gi)[0].split(" ")[1];
 
@@ -18,8 +20,8 @@ argsWithType = cargs.join(", ");
 res = `
 // SPDX-License-Identifier: UNLICENSED
 
-pragma solidity 0.8.7;
-import "${path}";
+pragma solidity ^0.8.0;
+import "../${contract_name}.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
 
 contract ${contract_name}Factory {
@@ -41,3 +43,4 @@ contract ${contract_name}Factory {
 `;
 
 console.log(res);
+fs.writeFileSync(`./contracts/factories/${contract_name}Factory.sol`, res);
