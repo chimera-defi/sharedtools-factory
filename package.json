@@ -24,10 +24,12 @@
   },
   "dependencies": {
     "@chimera-defi/merkle-distributor": "git+https://github.com/chimera-defi/merkle-distributor-generic.git",
+    "@chimera-defi/twamm": "git+https://github.com/chimera-defi/TWAMM-1.git",
     "@openzeppelin/contracts": "4.3.1",
     "@openzeppelin/contracts-upgradeable": "4.3.1",
     "@openzeppelin/contracts3": "npm:@openzeppelin/contracts@^3.4.2",
-    "iron-swap": "git+https://github.com/chimera-defi/iron-swap.git"
+    "iron-swap": "git+https://github.com/chimera-defi/iron-swap.git",
+    "prb-math": "^2.4.1"
   },
   "scripts": {
     "deploy_stableswap": "npx hardhat deploy --tags swap",
