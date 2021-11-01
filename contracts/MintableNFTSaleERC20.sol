@@ -59,7 +59,7 @@ contract MintableNFTSaleERC20 is MintableNFTSale {
         emit redeemedFreeMint(msg.sender);
     }
 
-    function mint(uint256 num) public payable virtual override {
+    function mint(uint256 num) public payable override {
         require(false, "Wrong function");
     }
 

@@ -109,10 +109,6 @@ contract MintableNFTSale_flashloan is MintableNFTSaleERC20 {
         emit redeemedFreeMint(msg.sender);
     }
 
-    function mint(uint256 num) public payable virtual override {
-        require(false, "Wrong function");
-    }
-
     function free_mint() public payable virtual override {
         require(false, "Wrong function");
     }

@@ -59,6 +59,11 @@ contract MintableNFTSale is ERC721Enumerable, OwnershipRolesTemplate {
 
     bool public paused_mint = true;
     bool public paused_pre_mint = true;
+    struct ImageURISettings {
+        bool forceConstantURI;
+        string extension;
+    }
+    ImageURISettings private settings;
     string private _baseTokenURI = "";
 
     // withdraw addresses
@@ -79,8 +84,6 @@ contract MintableNFTSale is ERC721Enumerable, OwnershipRolesTemplate {
         _;
     }
 
-    // constructor() {}
-
     constructor(
         string memory _name,
         string memory _symbol,
@@ -98,25 +101,33 @@ contract MintableNFTSale is ERC721Enumerable, OwnershipRolesTemplate {
         MAX_PER_MINT = _maxPerMint;
         pre_mint_reserved = _premint;
         freemint = _freemint;
+        settings = ImageURISettings({
+            forceConstantURI: false,
+            extension: "json"
+        });
         for (uint256 i = 0; i < admins.length; i++) {
             _setupRole(DEFAULT_ADMIN_ROLE, admins[i]);
         }
     }
 
-    function updateParams(uint256[] memory numericParams, address _paymentsSplitter) external onlyAdminOrGovernance {
+    function updateParams(uint256[] memory numericParams, address _paymentsSplitter, bool _forceConstantURI, string calldata _extension) external onlyAdminOrGovernance {
         PRICE = numericParams[0];
         MAX_SUPPLY = numericParams[1];
         MAX_PER_MINT = numericParams[2];
         pre_mint_reserved = numericParams[3];
         freemint = numericParams[4];
         paymentsSplitter = _paymentsSplitter;
+        settings = ImageURISettings({
+            forceConstantURI: _forceConstantURI,
+            extension: _extension
+        });
     }
 
     fallback() external payable {}
 
     receive() external payable {}
 
-    function mint(uint256 num) public payable virtual nonReentrant whenMintNotPaused noContractAllowed {
+    function mint(uint256 num) public virtual payable nonReentrant whenMintNotPaused noContractAllowed {
         uint256 supply = totalSupply();
         uint256 tokenCount = balanceOf(msg.sender);
         require(num <= MAX_PER_MINT, "AGC:MAX_PER_MINT");
@@ -132,7 +143,6 @@ contract MintableNFTSale is ERC721Enumerable, OwnershipRolesTemplate {
     function pre_mint()
         public
         payable
-        virtual
         whenPreMintNotPaused
         preMintAllowedAccount(msg.sender)
         noContractAllowed
@@ -147,10 +157,13 @@ contract MintableNFTSale is ERC721Enumerable, OwnershipRolesTemplate {
         emit redeemedPreMint(msg.sender);
     }
 
-    function free_mint() public payable virtual whenMintNotPaused noContractAllowed nonReentrant {
+    function free_mint() virtual public payable whenMintNotPaused noContractAllowed nonReentrant {
         require(freemint > 0, "VL0:freemint");
         freemint -= 1;
         uint256 supply = totalSupply();
+        uint256 tokenCount = balanceOf(msg.sender);
+        require(tokenCount + 1 <= MAX_PER_MINT, "AGC:MAX_PER_MINT"); // max n free tokens per user
+
         _safeMint(msg.sender, supply);
         emit redeemedFreeMint(msg.sender);
     }
@@ -216,8 +229,9 @@ contract MintableNFTSale is ERC721Enumerable, OwnershipRolesTemplate {
         require(_exists(tokenId), "INVALID");
 
         string memory baseURI = getBaseURI();
-        string memory json = ".json";
-        return bytes(baseURI).length > 0 ? string(abi.encodePacked(baseURI, tokenId.toString(), json)) : "";
+        if (settings.forceConstantURI) return baseURI;
+
+        return bytes(baseURI).length > 0 ? string(abi.encodePacked(baseURI, tokenId.toString(), settings.extension)) : "";
     }
 
     function supportsInterface(bytes4 interfaceId)

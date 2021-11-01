@@ -145,8 +145,9 @@ const _verifyAll = async (allContracts, launchNetwork) => {
     // hot swap the etherscan api key
     hre.config.etherscan.apiKey = process.env.POLYGONSCAN_API;
   }
-  log("Waiting 10s to make sure everything has propagated on etherscan");
-  await new Promise(resolve => setTimeout(resolve, 20000));
+  let waitTimeout = 20000;
+  log(`Waiting ${waitTimeout}ms to make sure everything has propagated on etherscan`);
+  await new Promise(resolve => setTimeout(resolve, waitTimeout));
   // wait 10s to make sure everything has propagated on etherscan
 
   let contractArr = [],
